@@ -1,12 +1,8 @@
 -----------------------------------------------------------------
 -- Created By: Richard Cho
--- Create Date: 11/02/2021
--- 
--- ECE 524/L
--- Lab - Arithmetic
---
--- File Name: image_mult_tb.vhd
--- Target Device: Zybo Z7 20
+-- Create Date: 3/17/2022
+-----------------------------------------------------------------
+-- Testbench to test the machine learning module with training
 -----------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;

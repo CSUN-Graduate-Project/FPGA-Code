@@ -2,6 +2,19 @@
 -- Created By: Richard Cho
 -- Create Date: 3/17/2022
 -----------------------------------------------------------------
+-- Naive Bayes model for stress detection using the WESAD
+-- database. Training mode increases individual probability
+-- values based on given inputs.
+-- Two machines run in parallel to calculate a stress and
+-- non-stress score. Whichever score is higher is the final
+-- decision. If scores are equal (highly unlikely) then it
+-- should choose not stressed as the default (not in yet).
+-----------------------------------------------------------------
+-- Revision History
+-- 3/17/2022: Created model for S2 only
+-- 4/24/2022: Updated model for S2 and S3 combined
+-- 5/28/22: Updated model for every WESAD subject
+-----------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
