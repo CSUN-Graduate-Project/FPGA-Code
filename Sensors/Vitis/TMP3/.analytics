@@ -6,3 +6,15 @@ timestamp=[2022-06-05 15:40:05], mode=PLATFORM_GENERATION, duration=0:00:25.379,
 timestamp=[2022-06-05 15:40:07], mode=BUILD, duration=0:00:02.127, duration_ms=2127, data={name=application_project_tmp3, configuration=Debug, clean_build=false}
 timestamp=[2022-06-05 19:00:09], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=application_project_tmp3, configuration=Debug, clean_build=false}
 timestamp=[2022-06-05 19:00:14], mode=BUILD, duration=0:00:05.040, duration_ms=5040, data={name=application_project_tmp3_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-10 10:03:51], mode=WORKBENCH_START, duration=0:00:11.183, duration_ms=11183, data={}
+timestamp=[2022-06-10 10:03:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.815, duration_ms=815, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TMP3_wrapper,application_project_tmp3,application_project_tmp3_system}
+timestamp=[2022-06-10 10:03:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.095, duration_ms=95, data={}
+timestamp=[2022-08-04 14:48:39], mode=WORKBENCH_START, duration=0:00:16.093, duration_ms=16093, data={}
+timestamp=[2022-08-04 14:48:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.929, duration_ms=929, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TMP3_wrapper,application_project_tmp3,application_project_tmp3_system}
+timestamp=[2022-08-04 14:48:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.400, duration_ms=400, data={}
+timestamp=[2022-09-07 00:53:45], mode=WORKBENCH_START, duration=0:00:09.414, duration_ms=9414, data={}
+timestamp=[2022-09-07 00:53:46], mode=WORKBENCH_UI_INIT, duration=0:00:00.774, duration_ms=774, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TMP3_wrapper,application_project_tmp3,application_project_tmp3_system}
+timestamp=[2022-09-07 00:54:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.107, duration_ms=107, data={}
+timestamp=[2022-09-07 22:34:47], mode=WORKBENCH_START, duration=0:00:07.029, duration_ms=7029, data={}
+timestamp=[2022-09-07 22:34:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.563, duration_ms=563, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TMP3_wrapper,application_project_tmp3,application_project_tmp3_system}
+timestamp=[2022-09-07 22:35:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.290, duration_ms=290, data={}

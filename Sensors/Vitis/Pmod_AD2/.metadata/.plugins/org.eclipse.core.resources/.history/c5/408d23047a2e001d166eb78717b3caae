@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include "PmodAD2.h"
+#include "sleep.h"
+#include "xil_cache.h"
+#include "xparameters.h"
+
+PmodAD2 myDevice;
+//PmodAD2 myDevice2;
+
+
+u16 conv;
+//u16 conv2;
+u8 channel;
+double voltage;
+//double voltage2;
+
+u16 volt;
+
+int main() {
+AD2_begin(&myDevice, XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, AD2_IIC_ADDR);
+//AD2_begin(&myDevice2, XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, AD2_IIC_ADDR);
+
+// Turn on channel 0, pin V1
+//AD2_WriteConfig(&myDevice1, AD2_CONFIG_CH0);
+
+// Turn on channel 1, pin V2
+//AD2_WriteConfig(&myDevice1, AD2_CONFIG_CH0 | AD2_CONFIG_CH1);
+
+// Turn on all channels
+AD2_WriteConfig(&myDevice, AD2_DEFAULT_CONFIG);
+
+	while(1) {
+    AD2_ReadConv(&myDevice, &conv);
+    //AD2_ReadConv(&myDevice2, &conv2);
+
+
+    // Keep 12-bit result, masking or bit select
+    //conv1 &= 0xFFF;
+    //conv2 &= 0xFFF;
+
+    // Keep 13-bit result, masking or bit select
+    conv &= 0x3FFF;
+
+
+ 	//Scale captured data such that 0x000:0xFFF => 0.0:3.3
+    voltage = (double) (conv & AD2_DATA_MASK) * 3.3 / (AD2_DATA_MASK + 1);
+    //voltage2 = (double) (conv2 & AD2_DATA_MASK) * 3.3 / (AD2_DATA_MASK + 1);
+
+    //printf("conv1 = %d V \r\n", conv1);
+    //printf("voltage1 = %lf V \r\n", voltage1);
+
+    //printf("conv2 = %d V \r\n", conv2);
+    //printf("voltage2 = %lf V \r\n", voltage2);
+
+    // Pull channel read information out of conv
+    channel = (conv & AD2_CHANNEL_MASK) >> AD2_CHANNEL_BIT;
+	printf("Pin V%d = %.02f V \r\n", channel + 1, voltage); //iterates
+	sleep(1);
+	      }
+
+}

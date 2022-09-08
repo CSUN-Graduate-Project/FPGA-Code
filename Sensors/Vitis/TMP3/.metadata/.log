@@ -1829,3 +1829,1840 @@ java.lang.Error
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 19:00:08.819
 !MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/sw/TMP3_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-28: Build Project
+!SESSION 2022-06-10 09:59:09.065 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-06-10 10:03:45.268
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:52.761
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:52.777
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:52.802
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:52.803
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:52.835
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:52.851
+!MESSAGE XSCT Command: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:56.872
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:56.872
+!MESSAGE XSCT command with result: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Result: [null, ]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:56.873
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 10:03:56.873
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2021.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-06-10 10:06:04.049
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-06-10 10:06:04.049
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-06-10 10:06:04.049
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.tcf 4 0 2022-06-10 10:26:22.301
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+!SESSION 2022-08-04 14:48:09.837 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-08-04 14:48:23.548
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2022-08-04 14:48:30.999
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:42.650
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:42.655
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:42.677
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:42.695
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:42.697
+!MESSAGE XSCT Command: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:42.699
+!MESSAGE XSCT command with result: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Result: [null, ]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:43.160
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:44.102
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:44.115
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:48:44.117
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2021.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-08-04 14:52:27.973
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-08-04 14:52:27.974
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-08-04 14:52:27.982
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:29.252
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.186
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.190
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.199
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Result: [null, {"PmodTMP3_0": {"hier_name": "PmodTMP3_0",
+"type": "PmodTMP3",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.202
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.206
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Sun Jun  5 15:18:33 2022",
+"vivado_version": "2021.2",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.570
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.575
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "50",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.576
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.581
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0], Result: [null, {"PmodTMP3_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.582
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.591
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0], Result: [null, {"PmodTMP3_0_AXI_LITE_IIC": {"name": "PmodTMP3_0",
+"base": "0x40000000",
+"high": "0x40000FFF",
+"size": "4096",
+"slaveintf": "AXI_LITE_IIC",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.593
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.595
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.595
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.597
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.597
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.607
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.608
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.612
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.615
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.616
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.619
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.621
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.639
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.640
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1], Result: [null, {"PmodTMP3_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.647
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.658
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1], Result: [null, {"PmodTMP3_0_AXI_LITE_IIC": {"name": "PmodTMP3_0",
+"base": "0x40000000",
+"high": "0x40000FFF",
+"size": "4096",
+"slaveintf": "AXI_LITE_IIC",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.670
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.672
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.673
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.675
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.677
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.679
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.680
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.682
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.701
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.704
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.705
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.706
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.709
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.711
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa ps7_cortexa9_0], Result: [null, PmodTMP3_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.712
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa bit], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.714
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa bit], Result: [null, TMP3_wrapper.bit]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:31.717
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:33.953
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:33.955
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.340
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.341
+!MESSAGE XSCT Command: [version -server], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.349
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.350
+!MESSAGE XSCT Command: [version], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.350
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.354
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.377
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.378
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.394
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.398
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.415
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.416
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.434
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.436
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.442
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.443
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.463
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.465
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.472
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.472
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.492
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.493
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.498
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.499
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.513
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.515
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.521
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481C2A]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.522
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.541
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.546
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.564
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.566
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.657
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.658
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.720
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.721
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.792
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:34.793
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.807
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.847
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.855
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.857
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.871
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.873
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.875
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.876
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.882
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.883
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.884
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.884
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.890
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.891
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.907
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.908
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.911
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Zybo Z7-210351B481C2A-4ba00477-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.911
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.913
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-Zybo Z7-210351B481C2A-23727093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:37.919
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:38.233
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:38.234
+!MESSAGE XSCT Command: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/bitstream/TMP3_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.710
+!MESSAGE XSCT command with result: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/bitstream/TMP3_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.743
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.752
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.753
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.811
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, TMP3_wrapper]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.813
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.815
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.815
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.823
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.823
+!MESSAGE XSCT Command: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/psinit/ps7_init.tcl], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.833
+!MESSAGE XSCT command with result: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:40.834
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.299
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.300
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.309
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.310
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.437
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.438
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/Debug/application_project_tmp3.elf], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.669
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/Debug/application_project_tmp3.elf], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.670
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.749
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.875
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.892
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.893
+!MESSAGE XSCT Command: [con], Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:52:41.962
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-8: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:57.084
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-117
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:57.092
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-117
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.096
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.137
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.138
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.151
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.151
+!MESSAGE XSCT Command: [version -server], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.153
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.153
+!MESSAGE XSCT Command: [version], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.154
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.155
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.162
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.163
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.182
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.183
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.190
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.190
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.208
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.209
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.214
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.215
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.230
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.231
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.238
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.239
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.255
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.255
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.261
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.261
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.280
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.280
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.288
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.289
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.307
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.308
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.325
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.326
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.328
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:54:58.328
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:00.363
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:00.364
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:00.434
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:00.435
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.440
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.456
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.464
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.465
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.479
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.481
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.509
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:03.510
+!MESSAGE XSCT Command: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/bitstream/TMP3_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:05.890
+!MESSAGE XSCT command with result: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/bitstream/TMP3_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:05.914
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:05.926
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:05.926
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.341
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/hw/TMP3_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, TMP3_wrapper_0]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.341
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.343
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.344
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.394
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.395
+!MESSAGE XSCT Command: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/psinit/ps7_init.tcl], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.397
+!MESSAGE XSCT command with result: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.398
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.876
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.877
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.885
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.885
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.934
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:08.935
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/Debug/application_project_tmp3.elf], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.139
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/application_project_tmp3/Debug/application_project_tmp3.elf], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.140
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.208
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.271
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.282
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.283
+!MESSAGE XSCT Command: [con], Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 14:55:09.327
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-3: Launching Debugger_application_project_tmp3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 16:32:41.806
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-170
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-08-04 16:32:41.827
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-170
+!SESSION 2022-09-07 00:53:20.057 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-09-07 00:53:39.690
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 00:53:44.923
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 00:53:44.929
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 00:53:44.933
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:53:47.301
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:53:47.301
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:53:47.315
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:53:47.328
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:53:47.331
+!MESSAGE XSCT Command: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:53:47.334
+!MESSAGE XSCT command with result: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Result: [null, ]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:54:08.736
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:54:09.023
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:54:09.025
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:54:09.027
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2021.2/data]. Thread: Worker-6: Initializing s/w repositories
+!SESSION 2022-09-07 22:34:39.240 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\TMP3
+
+!ENTRY org.eclipse.ui 4 4 2022-09-07 22:34:43.659
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 22:34:47.191
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 22:34:47.193
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 22:34:47.193
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:34:48.567
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:34:48.567
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:34:48.580
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:34:48.594
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:34:48.596
+!MESSAGE XSCT Command: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:34:48.597
+!MESSAGE XSCT command with result: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:35:10.395
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:35:10.658
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:35:10.660
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 22:35:10.703
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2021.2/data]. Thread: Worker-5: Initializing s/w repositories

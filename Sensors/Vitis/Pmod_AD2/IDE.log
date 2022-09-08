@@ -1262,3 +1262,2444 @@ con
 ----------------End of Script----------------
 
 18:17:04 INFO  : Disconnected from the channel tcfchan#45.
+19:36:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+19:36:31 INFO  : XSCT server has started successfully.
+19:36:31 INFO  : plnx-install-location is set to ''
+19:36:31 INFO  : Successfully done setting XSCT server connection channel  
+19:36:31 INFO  : Successfully done setting workspace for the tool. 
+19:36:52 INFO  : Registering command handlers for Vitis TCF services
+19:36:52 INFO  : Platform repository initialization has completed.
+19:36:55 INFO  : Successfully done query RDI_DATADIR 
+19:37:44 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+19:37:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+19:39:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:39:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+19:39:23 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+19:40:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:40:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+19:40:12 INFO  : 'jtag frequency' command is executed.
+19:40:12 INFO  : Context for 'APU' is selected.
+19:40:12 INFO  : System reset is completed.
+19:40:15 INFO  : 'after 3000' command is executed.
+19:40:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+19:40:18 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+19:40:18 INFO  : Context for 'APU' is selected.
+19:40:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+19:40:18 INFO  : 'configparams force-mem-access 1' command is executed.
+19:40:18 INFO  : Context for 'APU' is selected.
+19:40:18 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+19:40:19 INFO  : 'ps7_init' command is executed.
+19:40:19 INFO  : 'ps7_post_config' command is executed.
+19:40:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:40:19 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:40:19 INFO  : 'configparams force-mem-access 0' command is executed.
+19:40:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:40:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:40:19 INFO  : 'con' command is executed.
+19:40:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:40:19 INFO  : Disconnected from the channel tcfchan#2.
+19:53:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:53:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+19:53:10 INFO  : 'jtag frequency' command is executed.
+19:53:10 INFO  : Context for 'APU' is selected.
+19:53:10 INFO  : System reset is completed.
+19:53:13 INFO  : 'after 3000' command is executed.
+19:53:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+19:53:16 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+19:53:16 INFO  : Context for 'APU' is selected.
+19:53:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+19:53:19 INFO  : 'configparams force-mem-access 1' command is executed.
+19:53:19 INFO  : Context for 'APU' is selected.
+19:53:19 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+19:53:20 INFO  : 'ps7_init' command is executed.
+19:53:20 INFO  : 'ps7_post_config' command is executed.
+19:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:53:20 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:53:20 INFO  : 'configparams force-mem-access 0' command is executed.
+19:53:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:53:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:53:21 INFO  : 'con' command is executed.
+19:53:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:53:21 INFO  : Disconnected from the channel tcfchan#3.
+10:01:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+10:01:34 INFO  : Registering command handlers for Vitis TCF services
+10:01:34 INFO  : Platform repository initialization has completed.
+10:01:35 INFO  : XSCT server has started successfully.
+10:01:35 INFO  : plnx-install-location is set to ''
+10:01:35 INFO  : Successfully done setting XSCT server connection channel  
+10:01:38 INFO  : Successfully done setting workspace for the tool. 
+10:01:38 INFO  : Successfully done query RDI_DATADIR 
+10:57:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+10:57:33 INFO  : Registering command handlers for Vitis TCF services
+10:57:33 INFO  : Platform repository initialization has completed.
+10:57:34 INFO  : XSCT server has started successfully.
+10:57:34 INFO  : plnx-install-location is set to ''
+10:57:38 INFO  : Successfully done setting XSCT server connection channel  
+10:57:38 INFO  : Successfully done query RDI_DATADIR 
+10:57:38 INFO  : Successfully done setting workspace for the tool. 
+10:58:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:22 ERROR : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' is cancelled.
+11:04:18 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+11:04:21 INFO  : Registering command handlers for Vitis TCF services
+11:04:21 INFO  : Platform repository initialization has completed.
+11:04:23 INFO  : XSCT server has started successfully.
+11:04:23 INFO  : plnx-install-location is set to ''
+11:04:27 INFO  : Successfully done setting XSCT server connection channel  
+11:04:27 INFO  : Successfully done query RDI_DATADIR 
+11:04:27 INFO  : Successfully done setting workspace for the tool. 
+11:07:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+11:07:07 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+11:07:18 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+11:07:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+11:07:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+11:07:32 INFO  : 'jtag frequency' command is executed.
+11:07:32 INFO  : Context for 'APU' is selected.
+11:07:33 INFO  : System reset is completed.
+11:07:36 INFO  : 'after 3000' command is executed.
+11:07:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+11:07:38 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+11:07:38 INFO  : Context for 'APU' is selected.
+11:07:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+11:07:38 INFO  : 'configparams force-mem-access 1' command is executed.
+11:07:38 INFO  : Context for 'APU' is selected.
+11:07:38 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+11:07:40 INFO  : 'ps7_init' command is executed.
+11:07:40 INFO  : 'ps7_post_config' command is executed.
+11:07:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:40 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:07:40 INFO  : 'configparams force-mem-access 0' command is executed.
+11:07:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:07:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:40 INFO  : 'con' command is executed.
+11:07:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:07:40 INFO  : Disconnected from the channel tcfchan#1.
+11:09:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+11:09:58 INFO  : 'jtag frequency' command is executed.
+11:09:58 INFO  : Context for 'APU' is selected.
+11:09:58 INFO  : System reset is completed.
+11:10:01 INFO  : 'after 3000' command is executed.
+11:10:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+11:10:04 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+11:10:04 INFO  : Context for 'APU' is selected.
+11:10:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+11:10:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:10:07 INFO  : Context for 'APU' is selected.
+11:10:07 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+11:10:08 INFO  : 'ps7_init' command is executed.
+11:10:08 INFO  : 'ps7_post_config' command is executed.
+11:10:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:08 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:10:09 INFO  : 'configparams force-mem-access 0' command is executed.
+11:10:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:10:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:09 INFO  : 'con' command is executed.
+11:10:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:10:09 INFO  : Disconnected from the channel tcfchan#3.
+12:59:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+12:59:50 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+13:00:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+13:00:42 INFO  : 'jtag frequency' command is executed.
+13:00:42 INFO  : Context for 'APU' is selected.
+13:00:42 INFO  : System reset is completed.
+13:00:45 INFO  : 'after 3000' command is executed.
+13:00:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+13:00:47 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+13:00:48 INFO  : Context for 'APU' is selected.
+13:00:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+13:00:48 INFO  : 'configparams force-mem-access 1' command is executed.
+13:00:48 INFO  : Context for 'APU' is selected.
+13:00:48 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+13:00:48 INFO  : 'ps7_init' command is executed.
+13:00:48 INFO  : 'ps7_post_config' command is executed.
+13:00:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:48 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:00:48 INFO  : 'configparams force-mem-access 0' command is executed.
+13:00:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:00:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:00:49 INFO  : 'con' command is executed.
+13:00:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:00:49 INFO  : Disconnected from the channel tcfchan#4.
+13:01:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:01:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+13:01:34 INFO  : 'jtag frequency' command is executed.
+13:01:34 INFO  : Context for 'APU' is selected.
+13:01:34 INFO  : System reset is completed.
+13:01:37 INFO  : 'after 3000' command is executed.
+13:01:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+13:01:40 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+13:01:40 INFO  : Context for 'APU' is selected.
+13:01:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+13:01:42 INFO  : 'configparams force-mem-access 1' command is executed.
+13:01:42 INFO  : Context for 'APU' is selected.
+13:01:42 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+13:01:43 INFO  : 'ps7_init' command is executed.
+13:01:43 INFO  : 'ps7_post_config' command is executed.
+13:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:01:43 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:01:43 INFO  : 'configparams force-mem-access 0' command is executed.
+13:01:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:01:43 INFO  : 'con' command is executed.
+13:01:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:01:43 INFO  : Disconnected from the channel tcfchan#5.
+16:24:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+16:24:48 INFO  : XSCT server has started successfully.
+16:24:48 INFO  : plnx-install-location is set to ''
+16:24:48 INFO  : Successfully done setting XSCT server connection channel  
+16:24:48 INFO  : Successfully done setting workspace for the tool. 
+16:24:49 INFO  : Platform repository initialization has completed.
+16:24:49 INFO  : Registering command handlers for Vitis TCF services
+16:24:49 INFO  : Successfully done query RDI_DATADIR 
+23:03:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+23:03:12 INFO  : XSCT server has started successfully.
+23:03:12 INFO  : plnx-install-location is set to ''
+23:03:12 INFO  : Successfully done setting XSCT server connection channel  
+23:03:12 INFO  : Successfully done setting workspace for the tool. 
+23:03:35 INFO  : Registering command handlers for Vitis TCF services
+23:03:35 INFO  : Platform repository initialization has completed.
+23:03:35 INFO  : Successfully done query RDI_DATADIR 
+23:20:35 INFO  : Result from executing command 'getProjects': Pmod_AD2_wrapper
+23:20:35 INFO  : Result from executing command 'getPlatforms': Pmod_AD2_wrapper|C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/Pmod_AD2_wrapper.xpfm
+23:20:35 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:20:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:20:54 INFO  : 'jtag frequency' command is executed.
+23:20:54 INFO  : Context for 'APU' is selected.
+23:20:54 INFO  : System reset is completed.
+23:20:57 INFO  : 'after 3000' command is executed.
+23:20:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:20:59 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:20:59 INFO  : Context for 'APU' is selected.
+23:20:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:20:59 INFO  : 'configparams force-mem-access 1' command is executed.
+23:20:59 INFO  : Context for 'APU' is selected.
+23:20:59 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:21:00 INFO  : 'ps7_init' command is executed.
+23:21:00 INFO  : 'ps7_post_config' command is executed.
+23:21:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:21:00 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:21:00 INFO  : 'configparams force-mem-access 0' command is executed.
+23:21:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:21:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:21:01 INFO  : 'con' command is executed.
+23:21:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:21:01 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:24:04 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:24:27 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:24:43 INFO  : Disconnected from the channel tcfchan#3.
+23:24:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:24:45 INFO  : 'jtag frequency' command is executed.
+23:24:45 INFO  : Context for 'APU' is selected.
+23:24:45 INFO  : System reset is completed.
+23:24:48 INFO  : 'after 3000' command is executed.
+23:24:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:24:50 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:24:50 INFO  : Context for 'APU' is selected.
+23:24:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:24:50 INFO  : 'configparams force-mem-access 1' command is executed.
+23:24:50 INFO  : Context for 'APU' is selected.
+23:24:50 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:24:51 INFO  : 'ps7_init' command is executed.
+23:24:51 INFO  : 'ps7_post_config' command is executed.
+23:24:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:51 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:24:51 INFO  : 'configparams force-mem-access 0' command is executed.
+23:24:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:24:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:51 INFO  : 'con' command is executed.
+23:24:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:24:51 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:26:17 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:28:04 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:28:19 INFO  : Disconnected from the channel tcfchan#6.
+23:28:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:28:21 INFO  : 'jtag frequency' command is executed.
+23:28:22 INFO  : Context for 'APU' is selected.
+23:28:22 INFO  : System reset is completed.
+23:28:25 INFO  : 'after 3000' command is executed.
+23:28:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:28:27 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:28:27 INFO  : Context for 'APU' is selected.
+23:28:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:28:27 INFO  : 'configparams force-mem-access 1' command is executed.
+23:28:27 INFO  : Context for 'APU' is selected.
+23:28:27 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:28:28 INFO  : 'ps7_init' command is executed.
+23:28:28 INFO  : 'ps7_post_config' command is executed.
+23:28:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:28 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:28:28 INFO  : 'configparams force-mem-access 0' command is executed.
+23:28:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:28:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:28 INFO  : 'con' command is executed.
+23:28:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:28:28 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:38:23 INFO  : Disconnected from the channel tcfchan#8.
+23:38:39 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:38:52 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:39:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:39:07 INFO  : 'jtag frequency' command is executed.
+23:39:07 INFO  : Context for 'APU' is selected.
+23:39:07 INFO  : System reset is completed.
+23:39:10 INFO  : 'after 3000' command is executed.
+23:39:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:39:12 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:39:13 INFO  : Context for 'APU' is selected.
+23:39:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:39:13 INFO  : 'configparams force-mem-access 1' command is executed.
+23:39:13 INFO  : Context for 'APU' is selected.
+23:39:13 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:39:13 INFO  : 'ps7_init' command is executed.
+23:39:13 INFO  : 'ps7_post_config' command is executed.
+23:39:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:39:13 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:39:14 INFO  : 'configparams force-mem-access 0' command is executed.
+23:39:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:39:14 INFO  : 'con' command is executed.
+23:39:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:39:14 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+18:03:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+18:03:59 INFO  : Registering command handlers for Vitis TCF services
+18:03:59 INFO  : Platform repository initialization has completed.
+18:04:00 INFO  : XSCT server has started successfully.
+18:04:00 INFO  : Successfully done setting XSCT server connection channel  
+18:04:00 INFO  : plnx-install-location is set to ''
+18:04:04 INFO  : Successfully done setting workspace for the tool. 
+18:04:04 INFO  : Successfully done query RDI_DATADIR 
+18:12:48 INFO  : Result from executing command 'getProjects': Pmod_AD2_wrapper
+18:12:48 INFO  : Result from executing command 'getPlatforms': Pmod_AD2_wrapper|C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/Pmod_AD2_wrapper.xpfm
+18:12:48 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:12:59 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:13:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:13:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:13:17 INFO  : 'jtag frequency' command is executed.
+18:13:17 INFO  : Context for 'APU' is selected.
+18:13:17 INFO  : System reset is completed.
+18:13:20 INFO  : 'after 3000' command is executed.
+18:13:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:13:22 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+18:13:22 INFO  : Context for 'APU' is selected.
+18:13:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+18:13:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:13:22 INFO  : Context for 'APU' is selected.
+18:13:22 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+18:13:23 INFO  : 'ps7_init' command is executed.
+18:13:23 INFO  : 'ps7_post_config' command is executed.
+18:13:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:23 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:13:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:13:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:13:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:24 INFO  : 'con' command is executed.
+18:13:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:13:24 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+18:14:21 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:14:39 INFO  : Disconnected from the channel tcfchan#4.
+18:14:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:14:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:14:40 INFO  : 'jtag frequency' command is executed.
+18:14:40 INFO  : Context for 'APU' is selected.
+18:14:40 INFO  : System reset is completed.
+18:14:43 INFO  : 'after 3000' command is executed.
+18:14:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:14:46 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+18:14:46 INFO  : Context for 'APU' is selected.
+18:14:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+18:14:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:14:46 INFO  : Context for 'APU' is selected.
+18:14:46 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+18:14:46 INFO  : 'ps7_init' command is executed.
+18:14:46 INFO  : 'ps7_post_config' command is executed.
+18:14:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:47 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:14:47 INFO  : 'configparams force-mem-access 0' command is executed.
+18:14:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:14:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:47 INFO  : 'con' command is executed.
+18:14:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:14:47 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+18:18:14 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:18:25 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:19:06 INFO  : Disconnected from the channel tcfchan#6.
+18:19:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:19:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:19:07 INFO  : 'jtag frequency' command is executed.
+18:19:07 INFO  : Context for 'APU' is selected.
+18:19:07 INFO  : System reset is completed.
+18:19:10 INFO  : 'after 3000' command is executed.
+18:19:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:19:13 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+18:19:13 INFO  : Context for 'APU' is selected.
+18:19:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+18:19:13 INFO  : 'configparams force-mem-access 1' command is executed.
+18:19:13 INFO  : Context for 'APU' is selected.
+18:19:13 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+18:19:13 INFO  : 'ps7_init' command is executed.
+18:19:13 INFO  : 'ps7_post_config' command is executed.
+18:19:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:14 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:19:14 INFO  : 'configparams force-mem-access 0' command is executed.
+18:19:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:19:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:14 INFO  : 'con' command is executed.
+18:19:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:19:14 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+18:25:02 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:25:16 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:26:36 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:26:56 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:27:53 INFO  : Disconnected from the channel tcfchan#9.
+18:27:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:27:54 INFO  : 'jtag frequency' command is executed.
+18:27:55 INFO  : Context for 'APU' is selected.
+18:27:55 INFO  : System reset is completed.
+18:27:58 INFO  : 'after 3000' command is executed.
+18:27:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:28:00 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+18:28:00 INFO  : Context for 'APU' is selected.
+18:28:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+18:28:00 INFO  : 'configparams force-mem-access 1' command is executed.
+18:28:00 INFO  : Context for 'APU' is selected.
+18:28:00 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+18:28:01 INFO  : 'ps7_init' command is executed.
+18:28:01 INFO  : 'ps7_post_config' command is executed.
+18:28:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:01 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:28:01 INFO  : 'configparams force-mem-access 0' command is executed.
+18:28:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:28:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:01 INFO  : 'con' command is executed.
+18:28:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:28:01 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+18:33:06 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:33:30 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+18:33:43 INFO  : Disconnected from the channel tcfchan#13.
+18:33:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+18:33:44 INFO  : 'jtag frequency' command is executed.
+18:33:44 INFO  : Context for 'APU' is selected.
+18:33:44 INFO  : System reset is completed.
+18:33:47 INFO  : 'after 3000' command is executed.
+18:33:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+18:33:50 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+18:33:50 INFO  : Context for 'APU' is selected.
+18:33:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+18:33:50 INFO  : 'configparams force-mem-access 1' command is executed.
+18:33:50 INFO  : Context for 'APU' is selected.
+18:33:50 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+18:33:50 INFO  : 'ps7_init' command is executed.
+18:33:50 INFO  : 'ps7_post_config' command is executed.
+18:33:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:51 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:33:51 INFO  : 'configparams force-mem-access 0' command is executed.
+18:33:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:33:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:51 INFO  : 'con' command is executed.
+18:33:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:33:51 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+18:56:50 INFO  : Disconnected from the channel tcfchan#15.
+23:08:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+23:08:21 INFO  : XSCT server has started successfully.
+23:08:21 INFO  : plnx-install-location is set to ''
+23:08:21 INFO  : Successfully done setting XSCT server connection channel  
+23:08:21 INFO  : Successfully done setting workspace for the tool. 
+23:08:44 INFO  : Registering command handlers for Vitis TCF services
+23:08:44 INFO  : Platform repository initialization has completed.
+23:08:50 INFO  : Successfully done query RDI_DATADIR 
+23:13:16 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:14:01 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:14:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:14:14 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:14:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:14:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:14:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:14:35 INFO  : 'jtag frequency' command is executed.
+23:14:35 INFO  : Context for 'APU' is selected.
+23:14:35 INFO  : System reset is completed.
+23:14:38 INFO  : 'after 3000' command is executed.
+23:14:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:14:41 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:14:41 INFO  : Context for 'APU' is selected.
+23:14:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:14:41 INFO  : 'configparams force-mem-access 1' command is executed.
+23:14:41 INFO  : Context for 'APU' is selected.
+23:14:41 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:14:42 INFO  : 'ps7_init' command is executed.
+23:14:42 INFO  : 'ps7_post_config' command is executed.
+23:14:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:14:42 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:14:42 INFO  : 'configparams force-mem-access 0' command is executed.
+23:14:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:14:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:14:42 INFO  : 'con' command is executed.
+23:14:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:14:42 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:20:27 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:20:30 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:20:42 INFO  : Disconnected from the channel tcfchan#3.
+23:20:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:20:44 INFO  : 'jtag frequency' command is executed.
+23:20:44 INFO  : Context for 'APU' is selected.
+23:20:44 INFO  : System reset is completed.
+23:20:47 INFO  : 'after 3000' command is executed.
+23:20:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:20:49 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:20:49 INFO  : Context for 'APU' is selected.
+23:20:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:20:52 INFO  : 'configparams force-mem-access 1' command is executed.
+23:20:52 INFO  : Context for 'APU' is selected.
+23:20:52 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:20:52 INFO  : 'ps7_init' command is executed.
+23:20:53 INFO  : 'ps7_post_config' command is executed.
+23:20:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:53 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:20:53 INFO  : 'configparams force-mem-access 0' command is executed.
+23:20:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:20:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:53 INFO  : 'con' command is executed.
+23:20:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:20:53 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:21:39 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:21:42 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:22:07 INFO  : Disconnected from the channel tcfchan#5.
+23:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:22:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:22:08 INFO  : 'jtag frequency' command is executed.
+23:22:10 INFO  : Context for 'APU' is selected.
+23:22:10 INFO  : System reset is completed.
+23:22:13 INFO  : 'after 3000' command is executed.
+23:22:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:22:16 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:22:16 INFO  : Context for 'APU' is selected.
+23:22:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:22:18 INFO  : 'configparams force-mem-access 1' command is executed.
+23:22:18 INFO  : Context for 'APU' is selected.
+23:22:18 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:22:19 INFO  : 'ps7_init' command is executed.
+23:22:19 INFO  : 'ps7_post_config' command is executed.
+23:22:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:19 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:22:19 INFO  : 'configparams force-mem-access 0' command is executed.
+23:22:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:22:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:19 INFO  : 'con' command is executed.
+23:22:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:22:19 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:22:59 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:23:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:23:14 INFO  : Disconnected from the channel tcfchan#7.
+23:23:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:23:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:23:15 INFO  : 'jtag frequency' command is executed.
+23:23:15 INFO  : Context for 'APU' is selected.
+23:23:16 INFO  : System reset is completed.
+23:23:19 INFO  : 'after 3000' command is executed.
+23:23:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:23:21 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:23:21 INFO  : Context for 'APU' is selected.
+23:23:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:23:23 INFO  : 'configparams force-mem-access 1' command is executed.
+23:23:23 INFO  : Context for 'APU' is selected.
+23:23:23 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:23:24 INFO  : 'ps7_init' command is executed.
+23:23:24 INFO  : 'ps7_post_config' command is executed.
+23:23:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:24 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:23:24 INFO  : 'configparams force-mem-access 0' command is executed.
+23:23:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:23:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:25 INFO  : 'con' command is executed.
+23:23:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:23:25 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:25:04 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:25:07 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:25:24 INFO  : Disconnected from the channel tcfchan#9.
+23:25:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:25:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:25:25 ERROR : port closed
+23:25:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+23:25:25 ERROR : port closed
+23:25:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:25:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:25:31 INFO  : 'jtag frequency' command is executed.
+23:25:31 INFO  : Context for 'APU' is selected.
+23:25:31 INFO  : System reset is completed.
+23:25:34 INFO  : 'after 3000' command is executed.
+23:25:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:25:36 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:25:36 INFO  : Context for 'APU' is selected.
+23:25:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:25:39 INFO  : 'configparams force-mem-access 1' command is executed.
+23:25:39 INFO  : Context for 'APU' is selected.
+23:25:39 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:25:39 INFO  : 'ps7_init' command is executed.
+23:25:39 INFO  : 'ps7_post_config' command is executed.
+23:25:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:25:40 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:25:40 INFO  : 'configparams force-mem-access 0' command is executed.
+23:25:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:25:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:25:40 INFO  : 'con' command is executed.
+23:25:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:25:40 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:26:37 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:26:47 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:26:50 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:27:00 INFO  : Disconnected from the channel tcfchan#11.
+23:27:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:27:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:27:01 INFO  : 'jtag frequency' command is executed.
+23:27:03 INFO  : Context for 'APU' is selected.
+23:27:03 INFO  : System reset is completed.
+23:27:06 INFO  : 'after 3000' command is executed.
+23:27:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:27:09 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:27:09 INFO  : Context for 'APU' is selected.
+23:27:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:27:11 INFO  : 'configparams force-mem-access 1' command is executed.
+23:27:11 INFO  : Context for 'APU' is selected.
+23:27:11 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:27:12 INFO  : 'ps7_init' command is executed.
+23:27:12 INFO  : 'ps7_post_config' command is executed.
+23:27:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:27:12 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:27:12 INFO  : 'configparams force-mem-access 0' command is executed.
+23:27:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:27:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:27:12 INFO  : 'con' command is executed.
+23:27:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:27:12 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:28:50 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:28:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:29:06 INFO  : Disconnected from the channel tcfchan#13.
+23:29:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:29:07 INFO  : 'jtag frequency' command is executed.
+23:29:07 INFO  : Context for 'APU' is selected.
+23:29:07 INFO  : System reset is completed.
+23:29:10 INFO  : 'after 3000' command is executed.
+23:29:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:29:12 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:29:12 INFO  : Context for 'APU' is selected.
+23:29:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:29:15 INFO  : 'configparams force-mem-access 1' command is executed.
+23:29:15 INFO  : Context for 'APU' is selected.
+23:29:15 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:29:15 INFO  : 'ps7_init' command is executed.
+23:29:15 INFO  : 'ps7_post_config' command is executed.
+23:29:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:16 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:29:16 INFO  : 'configparams force-mem-access 0' command is executed.
+23:29:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:29:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:29:16 INFO  : 'con' command is executed.
+23:29:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:29:16 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:30:10 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:30:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:30:22 INFO  : Disconnected from the channel tcfchan#15.
+23:30:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:30:23 INFO  : 'jtag frequency' command is executed.
+23:30:23 INFO  : Context for 'APU' is selected.
+23:30:23 INFO  : System reset is completed.
+23:30:26 INFO  : 'after 3000' command is executed.
+23:30:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:30:29 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:30:29 INFO  : Context for 'APU' is selected.
+23:30:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:30:31 INFO  : 'configparams force-mem-access 1' command is executed.
+23:30:31 INFO  : Context for 'APU' is selected.
+23:30:31 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:30:32 INFO  : 'ps7_init' command is executed.
+23:30:32 INFO  : 'ps7_post_config' command is executed.
+23:30:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:33 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:30:33 INFO  : 'configparams force-mem-access 0' command is executed.
+23:30:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:33 INFO  : 'con' command is executed.
+23:30:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:30:33 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:51:53 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:52:05 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:52:08 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:52:16 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:52:35 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:52:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:52:48 INFO  : Disconnected from the channel tcfchan#17.
+23:52:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:52:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:52:49 INFO  : 'jtag frequency' command is executed.
+23:52:49 INFO  : Context for 'APU' is selected.
+23:52:49 INFO  : System reset is completed.
+23:52:52 INFO  : 'after 3000' command is executed.
+23:52:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:52:55 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:52:55 INFO  : Context for 'APU' is selected.
+23:52:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:52:58 INFO  : 'configparams force-mem-access 1' command is executed.
+23:52:58 INFO  : Context for 'APU' is selected.
+23:52:58 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:52:58 INFO  : 'ps7_init' command is executed.
+23:52:58 INFO  : 'ps7_post_config' command is executed.
+23:52:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:52:58 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:52:58 INFO  : 'configparams force-mem-access 0' command is executed.
+23:52:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:52:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:52:59 INFO  : 'con' command is executed.
+23:52:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:52:59 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+23:55:17 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:55:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:59:04 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:59:07 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:59:13 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+23:59:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+23:59:25 INFO  : Disconnected from the channel tcfchan#20.
+23:59:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:59:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+23:59:26 INFO  : 'jtag frequency' command is executed.
+23:59:27 INFO  : Context for 'APU' is selected.
+23:59:27 INFO  : System reset is completed.
+23:59:30 INFO  : 'after 3000' command is executed.
+23:59:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+23:59:33 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+23:59:33 INFO  : Context for 'APU' is selected.
+23:59:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+23:59:35 INFO  : 'configparams force-mem-access 1' command is executed.
+23:59:35 INFO  : Context for 'APU' is selected.
+23:59:35 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+23:59:36 INFO  : 'ps7_init' command is executed.
+23:59:36 INFO  : 'ps7_post_config' command is executed.
+23:59:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:59:36 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:59:36 INFO  : 'configparams force-mem-access 0' command is executed.
+23:59:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:59:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:59:36 INFO  : 'con' command is executed.
+23:59:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:59:36 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+00:24:13 WARN  : xsct server communication channel is not established.
+00:45:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+00:45:20 INFO  : XSCT server has started successfully.
+00:45:20 INFO  : Successfully done setting XSCT server connection channel  
+00:45:20 INFO  : plnx-install-location is set to ''
+00:45:20 INFO  : Successfully done setting workspace for the tool. 
+00:45:40 INFO  : Registering command handlers for Vitis TCF services
+00:45:41 INFO  : Platform repository initialization has completed.
+00:45:47 INFO  : Successfully done query RDI_DATADIR 
+01:20:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:20:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:20:40 INFO  : 'jtag frequency' command is executed.
+01:20:40 INFO  : Context for 'APU' is selected.
+01:20:40 INFO  : System reset is completed.
+01:20:43 INFO  : 'after 3000' command is executed.
+01:20:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:20:45 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:20:45 INFO  : Context for 'APU' is selected.
+01:20:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:20:45 INFO  : 'configparams force-mem-access 1' command is executed.
+01:20:45 INFO  : Context for 'APU' is selected.
+01:20:45 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:20:46 INFO  : 'ps7_init' command is executed.
+01:20:46 INFO  : 'ps7_post_config' command is executed.
+01:20:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:20:46 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:20:46 INFO  : 'configparams force-mem-access 0' command is executed.
+01:20:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:20:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:20:46 INFO  : 'con' command is executed.
+01:20:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:20:46 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:21:00 INFO  : Disconnected from the channel tcfchan#1.
+01:21:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:21:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:21:01 INFO  : 'jtag frequency' command is executed.
+01:21:01 INFO  : Context for 'APU' is selected.
+01:21:01 INFO  : System reset is completed.
+01:21:04 INFO  : 'after 3000' command is executed.
+01:21:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:21:07 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:21:07 INFO  : Context for 'APU' is selected.
+01:21:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:21:09 INFO  : 'configparams force-mem-access 1' command is executed.
+01:21:09 INFO  : Context for 'APU' is selected.
+01:21:09 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:21:09 INFO  : 'ps7_init' command is executed.
+01:21:09 INFO  : 'ps7_post_config' command is executed.
+01:21:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:21:09 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:21:10 INFO  : 'configparams force-mem-access 0' command is executed.
+01:21:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:21:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:21:10 INFO  : 'con' command is executed.
+01:21:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:21:10 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:21:38 INFO  : Disconnected from the channel tcfchan#2.
+01:21:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:21:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:21:39 INFO  : 'jtag frequency' command is executed.
+01:21:39 INFO  : Context for 'APU' is selected.
+01:21:39 INFO  : System reset is completed.
+01:21:42 INFO  : 'after 3000' command is executed.
+01:21:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:21:45 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:21:45 INFO  : Context for 'APU' is selected.
+01:21:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:21:47 INFO  : 'configparams force-mem-access 1' command is executed.
+01:21:47 INFO  : Context for 'APU' is selected.
+01:21:47 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:21:47 INFO  : 'ps7_init' command is executed.
+01:21:47 INFO  : 'ps7_post_config' command is executed.
+01:21:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:21:47 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:21:47 INFO  : 'configparams force-mem-access 0' command is executed.
+01:21:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:21:48 INFO  : 'con' command is executed.
+01:21:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:21:48 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:22:12 INFO  : Result from executing command 'removePlatformRepo': 
+01:22:42 INFO  : Result from executing command 'getProjects': Pmod_AD2_wrapper
+01:22:42 INFO  : Result from executing command 'getPlatforms': 
+01:22:42 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:22:57 INFO  : Disconnected from the channel tcfchan#3.
+01:22:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:22:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:22:59 INFO  : 'jtag frequency' command is executed.
+01:22:59 INFO  : Context for 'APU' is selected.
+01:22:59 INFO  : System reset is completed.
+01:23:02 INFO  : 'after 3000' command is executed.
+01:23:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:23:04 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:23:04 INFO  : Context for 'APU' is selected.
+01:23:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:23:07 INFO  : 'configparams force-mem-access 1' command is executed.
+01:23:07 INFO  : Context for 'APU' is selected.
+01:23:07 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:23:07 INFO  : 'ps7_init' command is executed.
+01:23:07 INFO  : 'ps7_post_config' command is executed.
+01:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:23:07 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:23:07 INFO  : 'configparams force-mem-access 0' command is executed.
+01:23:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:23:07 INFO  : 'con' command is executed.
+01:23:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:23:07 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:23:30 INFO  : Disconnected from the channel tcfchan#7.
+01:24:53 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+01:24:56 INFO  : XSCT server has started successfully.
+01:24:56 INFO  : Successfully done setting XSCT server connection channel  
+01:24:56 INFO  : plnx-install-location is set to ''
+01:24:56 INFO  : Successfully done setting workspace for the tool. 
+01:25:09 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_application_project_pmod_ad2-Default'. 
+Make sure that the application 'application_project_pmod_ad2' is built properly for configuration 'Debug' before launching.
+01:25:18 INFO  : Registering command handlers for Vitis TCF services
+01:25:18 INFO  : Platform repository initialization has completed.
+01:25:18 INFO  : Successfully done query RDI_DATADIR 
+01:25:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:25:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:25:26 INFO  : 'jtag frequency' command is executed.
+01:25:26 INFO  : Context for 'APU' is selected.
+01:25:26 INFO  : System reset is completed.
+01:25:29 INFO  : 'after 3000' command is executed.
+01:25:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:25:31 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:25:31 INFO  : Context for 'APU' is selected.
+01:25:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:25:31 INFO  : 'configparams force-mem-access 1' command is executed.
+01:25:31 INFO  : Context for 'APU' is selected.
+01:25:31 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:25:32 INFO  : 'ps7_init' command is executed.
+01:25:32 INFO  : 'ps7_post_config' command is executed.
+01:25:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:25:32 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:25:32 INFO  : 'configparams force-mem-access 0' command is executed.
+01:25:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:25:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:25:32 INFO  : 'con' command is executed.
+01:25:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:25:32 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:27:07 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:29:09 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:29:32 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:29:35 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+01:29:45 INFO  : Disconnected from the channel tcfchan#1.
+01:29:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:29:47 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:29:47 INFO  : 'jtag frequency' command is executed.
+01:29:49 INFO  : Context for 'APU' is selected.
+01:29:49 INFO  : System reset is completed.
+01:29:52 INFO  : 'after 3000' command is executed.
+01:29:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:29:54 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:29:54 INFO  : Context for 'APU' is selected.
+01:29:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:29:56 INFO  : 'configparams force-mem-access 1' command is executed.
+01:29:56 INFO  : Context for 'APU' is selected.
+01:29:56 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:29:57 INFO  : 'ps7_init' command is executed.
+01:29:57 INFO  : 'ps7_post_config' command is executed.
+01:29:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:29:57 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:29:57 INFO  : 'configparams force-mem-access 0' command is executed.
+01:29:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:29:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:29:57 INFO  : 'con' command is executed.
+01:29:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:29:57 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:31:29 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:31:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+01:31:43 INFO  : Disconnected from the channel tcfchan#3.
+01:31:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:31:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:31:45 INFO  : 'jtag frequency' command is executed.
+01:31:46 INFO  : Context for 'APU' is selected.
+01:31:47 INFO  : System reset is completed.
+01:31:50 INFO  : 'after 3000' command is executed.
+01:31:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:31:52 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:31:52 INFO  : Context for 'APU' is selected.
+01:31:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:31:54 INFO  : 'configparams force-mem-access 1' command is executed.
+01:31:54 INFO  : Context for 'APU' is selected.
+01:31:54 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:31:55 INFO  : 'ps7_init' command is executed.
+01:31:55 INFO  : 'ps7_post_config' command is executed.
+01:31:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:31:55 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:31:55 INFO  : 'configparams force-mem-access 0' command is executed.
+01:31:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:31:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:31:55 INFO  : 'con' command is executed.
+01:31:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:31:55 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:32:21 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:32:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+01:32:35 INFO  : Disconnected from the channel tcfchan#5.
+01:32:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:32:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:32:37 INFO  : 'jtag frequency' command is executed.
+01:32:37 INFO  : Context for 'APU' is selected.
+01:32:37 INFO  : System reset is completed.
+01:32:40 INFO  : 'after 3000' command is executed.
+01:32:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:32:42 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:32:42 INFO  : Context for 'APU' is selected.
+01:32:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:32:44 INFO  : 'configparams force-mem-access 1' command is executed.
+01:32:44 INFO  : Context for 'APU' is selected.
+01:32:44 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:32:45 INFO  : 'ps7_init' command is executed.
+01:32:45 INFO  : 'ps7_post_config' command is executed.
+01:32:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:32:45 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:32:45 INFO  : 'configparams force-mem-access 0' command is executed.
+01:32:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:32:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:32:45 INFO  : 'con' command is executed.
+01:32:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:32:45 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:34:02 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:34:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+01:34:27 INFO  : Disconnected from the channel tcfchan#7.
+01:34:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:34:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:34:28 INFO  : 'jtag frequency' command is executed.
+01:34:28 INFO  : Context for 'APU' is selected.
+01:34:28 INFO  : System reset is completed.
+01:34:31 INFO  : 'after 3000' command is executed.
+01:34:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:34:34 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:34:34 INFO  : Context for 'APU' is selected.
+01:34:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:34:36 INFO  : 'configparams force-mem-access 1' command is executed.
+01:34:36 INFO  : Context for 'APU' is selected.
+01:34:36 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:34:36 INFO  : 'ps7_init' command is executed.
+01:34:36 INFO  : 'ps7_post_config' command is executed.
+01:34:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:34:37 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:34:37 INFO  : 'configparams force-mem-access 0' command is executed.
+01:34:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:34:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:34:37 INFO  : 'con' command is executed.
+01:34:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:34:37 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:34:59 INFO  : Disconnected from the channel tcfchan#9.
+01:35:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:35:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:35:00 INFO  : 'jtag frequency' command is executed.
+01:35:01 INFO  : Context for 'APU' is selected.
+01:35:01 INFO  : System reset is completed.
+01:35:04 INFO  : 'after 3000' command is executed.
+01:35:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:35:06 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:35:06 INFO  : Context for 'APU' is selected.
+01:35:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:35:09 INFO  : 'configparams force-mem-access 1' command is executed.
+01:35:09 INFO  : Context for 'APU' is selected.
+01:35:09 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:35:09 INFO  : 'ps7_init' command is executed.
+01:35:09 INFO  : 'ps7_post_config' command is executed.
+01:35:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:09 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:35:09 INFO  : 'configparams force-mem-access 0' command is executed.
+01:35:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:35:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:35:10 INFO  : 'con' command is executed.
+01:35:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:35:10 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:38:20 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:38:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+01:38:39 INFO  : Disconnected from the channel tcfchan#10.
+01:38:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:38:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:38:41 INFO  : 'jtag frequency' command is executed.
+01:38:41 INFO  : Context for 'APU' is selected.
+01:38:41 INFO  : System reset is completed.
+01:38:44 INFO  : 'after 3000' command is executed.
+01:38:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:38:46 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:38:46 INFO  : Context for 'APU' is selected.
+01:38:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:38:49 INFO  : 'configparams force-mem-access 1' command is executed.
+01:38:49 INFO  : Context for 'APU' is selected.
+01:38:49 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:38:49 INFO  : 'ps7_init' command is executed.
+01:38:49 INFO  : 'ps7_post_config' command is executed.
+01:38:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:38:49 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:38:49 INFO  : 'configparams force-mem-access 0' command is executed.
+01:38:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:38:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:38:50 INFO  : 'con' command is executed.
+01:38:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:38:50 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:39:36 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:39:40 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+01:40:15 INFO  : Disconnected from the channel tcfchan#12.
+01:40:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:40:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:40:16 INFO  : 'jtag frequency' command is executed.
+01:40:18 INFO  : Context for 'APU' is selected.
+01:40:19 INFO  : System reset is completed.
+01:40:22 INFO  : 'after 3000' command is executed.
+01:40:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:40:24 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:40:24 INFO  : Context for 'APU' is selected.
+01:40:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:40:27 INFO  : 'configparams force-mem-access 1' command is executed.
+01:40:27 INFO  : Context for 'APU' is selected.
+01:40:27 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:40:27 INFO  : 'ps7_init' command is executed.
+01:40:27 INFO  : 'ps7_post_config' command is executed.
+01:40:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:40:27 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:40:27 INFO  : 'configparams force-mem-access 0' command is executed.
+01:40:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:40:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:40:27 INFO  : 'con' command is executed.
+01:40:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:40:27 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:43:42 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:43:57 INFO  : Result from executing command 'removePlatformRepo': 
+01:44:22 INFO  : Result from executing command 'getProjects': Pmod_AD2_wrapper
+01:44:22 INFO  : Result from executing command 'getPlatforms': 
+01:44:23 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+01:44:37 INFO  : Disconnected from the channel tcfchan#14.
+01:44:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:44:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:44:38 INFO  : 'jtag frequency' command is executed.
+01:44:39 INFO  : Context for 'APU' is selected.
+01:44:39 INFO  : System reset is completed.
+01:44:42 INFO  : 'after 3000' command is executed.
+01:44:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:44:45 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:44:45 INFO  : Context for 'APU' is selected.
+01:44:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:44:47 INFO  : 'configparams force-mem-access 1' command is executed.
+01:44:47 INFO  : Context for 'APU' is selected.
+01:44:47 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:44:47 INFO  : 'ps7_init' command is executed.
+01:44:47 INFO  : 'ps7_post_config' command is executed.
+01:44:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:44:48 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:44:48 INFO  : 'configparams force-mem-access 0' command is executed.
+01:44:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:44:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:44:48 INFO  : 'con' command is executed.
+01:44:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:44:48 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:47:04 INFO  : Disconnected from the channel tcfchan#18.
+01:47:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:47:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+01:47:05 INFO  : 'jtag frequency' command is executed.
+01:47:05 INFO  : Context for 'APU' is selected.
+01:47:05 INFO  : System reset is completed.
+01:47:08 INFO  : 'after 3000' command is executed.
+01:47:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+01:47:11 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+01:47:11 INFO  : Context for 'APU' is selected.
+01:47:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+01:47:11 INFO  : 'configparams force-mem-access 1' command is executed.
+01:47:11 INFO  : Context for 'APU' is selected.
+01:47:11 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+01:47:11 INFO  : 'ps7_init' command is executed.
+01:47:11 INFO  : 'ps7_post_config' command is executed.
+01:47:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:47:12 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:47:12 INFO  : 'configparams force-mem-access 0' command is executed.
+01:47:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:47:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:47:12 INFO  : 'con' command is executed.
+01:47:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:47:12 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+01:49:05 INFO  : Disconnected from the channel tcfchan#19.
+20:33:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\temp_xsdb_launch_script.tcl
+20:33:27 INFO  : XSCT server has started successfully.
+20:33:27 INFO  : Successfully done setting XSCT server connection channel  
+20:33:27 INFO  : plnx-install-location is set to ''
+20:33:27 INFO  : Successfully done setting workspace for the tool. 
+20:33:48 INFO  : Registering command handlers for Vitis TCF services
+20:33:49 INFO  : Platform repository initialization has completed.
+20:33:49 INFO  : Successfully done query RDI_DATADIR 
+20:35:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:35:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+20:35:06 INFO  : 'jtag frequency' command is executed.
+20:35:06 INFO  : Context for 'APU' is selected.
+20:35:06 INFO  : System reset is completed.
+20:35:09 INFO  : 'after 3000' command is executed.
+20:35:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+20:35:12 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+20:35:12 INFO  : Context for 'APU' is selected.
+20:35:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+20:35:12 INFO  : 'configparams force-mem-access 1' command is executed.
+20:35:12 INFO  : Context for 'APU' is selected.
+20:35:12 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+20:35:13 INFO  : 'ps7_init' command is executed.
+20:35:13 INFO  : 'ps7_post_config' command is executed.
+20:35:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:35:13 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:35:13 INFO  : 'configparams force-mem-access 0' command is executed.
+20:35:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:35:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:35:13 INFO  : 'con' command is executed.
+20:35:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:35:13 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+20:40:34 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:40:47 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:41:38 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:46:14 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:46:55 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:50:02 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:50:28 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:50:37 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:50:41 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+20:52:01 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:52:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+20:52:20 INFO  : Disconnected from the channel tcfchan#1.
+20:52:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+20:52:22 INFO  : 'jtag frequency' command is executed.
+20:52:23 INFO  : Context for 'APU' is selected.
+20:52:24 INFO  : System reset is completed.
+20:52:27 INFO  : 'after 3000' command is executed.
+20:52:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+20:52:29 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+20:52:29 INFO  : Context for 'APU' is selected.
+20:52:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+20:52:31 INFO  : 'configparams force-mem-access 1' command is executed.
+20:52:31 INFO  : Context for 'APU' is selected.
+20:52:31 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+20:52:32 INFO  : 'ps7_init' command is executed.
+20:52:32 INFO  : 'ps7_post_config' command is executed.
+20:52:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:32 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:52:32 INFO  : 'configparams force-mem-access 0' command is executed.
+20:52:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:52:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:33 INFO  : 'con' command is executed.
+20:52:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:52:33 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+20:55:47 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:56:09 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:56:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+20:56:27 INFO  : Disconnected from the channel tcfchan#4.
+20:56:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+20:56:29 INFO  : 'jtag frequency' command is executed.
+20:56:31 INFO  : Context for 'APU' is selected.
+20:56:31 INFO  : System reset is completed.
+20:56:34 INFO  : 'after 3000' command is executed.
+20:56:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+20:56:36 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+20:56:36 INFO  : Context for 'APU' is selected.
+20:56:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+20:56:39 INFO  : 'configparams force-mem-access 1' command is executed.
+20:56:39 INFO  : Context for 'APU' is selected.
+20:56:39 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+20:56:40 INFO  : 'ps7_init' command is executed.
+20:56:40 INFO  : 'ps7_post_config' command is executed.
+20:56:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:40 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:56:40 INFO  : 'configparams force-mem-access 0' command is executed.
+20:56:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:56:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:40 INFO  : 'con' command is executed.
+20:56:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:56:40 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+20:58:02 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:58:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+20:58:12 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+20:58:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+20:58:24 INFO  : Disconnected from the channel tcfchan#6.
+20:58:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:58:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+20:58:25 INFO  : 'jtag frequency' command is executed.
+20:58:26 INFO  : Context for 'APU' is selected.
+20:58:26 INFO  : System reset is completed.
+20:58:29 INFO  : 'after 3000' command is executed.
+20:58:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+20:58:31 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+20:58:32 INFO  : Context for 'APU' is selected.
+20:58:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+20:58:34 INFO  : 'configparams force-mem-access 1' command is executed.
+20:58:34 INFO  : Context for 'APU' is selected.
+20:58:34 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+20:58:35 INFO  : 'ps7_init' command is executed.
+20:58:35 INFO  : 'ps7_post_config' command is executed.
+20:58:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:58:35 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:58:35 INFO  : 'configparams force-mem-access 0' command is executed.
+20:58:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:58:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:58:35 INFO  : 'con' command is executed.
+20:58:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:58:35 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+20:59:58 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:00:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:00:08 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:00:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:00:27 INFO  : Disconnected from the channel tcfchan#9.
+21:00:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:00:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:00:28 INFO  : 'jtag frequency' command is executed.
+21:00:29 INFO  : Context for 'APU' is selected.
+21:00:29 INFO  : System reset is completed.
+21:00:32 INFO  : 'after 3000' command is executed.
+21:00:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+21:00:34 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+21:00:34 INFO  : Context for 'APU' is selected.
+21:00:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+21:00:37 INFO  : 'configparams force-mem-access 1' command is executed.
+21:00:37 INFO  : Context for 'APU' is selected.
+21:00:37 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+21:00:38 INFO  : 'ps7_init' command is executed.
+21:00:38 INFO  : 'ps7_post_config' command is executed.
+21:00:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:00:38 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:00:38 INFO  : 'configparams force-mem-access 0' command is executed.
+21:00:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:00:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:00:38 INFO  : 'con' command is executed.
+21:00:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:00:38 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+21:02:40 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:02:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:02:53 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:02:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:03:34 INFO  : Disconnected from the channel tcfchan#12.
+21:03:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:03:35 ERROR : port closed
+21:03:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:03:35 ERROR : port closed
+21:03:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:03:48 INFO  : 'jtag frequency' command is executed.
+21:03:48 INFO  : Context for 'APU' is selected.
+21:03:48 INFO  : System reset is completed.
+21:03:51 INFO  : 'after 3000' command is executed.
+21:03:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+21:03:53 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+21:03:53 INFO  : Context for 'APU' is selected.
+21:03:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+21:03:56 INFO  : 'configparams force-mem-access 1' command is executed.
+21:03:56 INFO  : Context for 'APU' is selected.
+21:03:56 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+21:03:56 INFO  : 'ps7_init' command is executed.
+21:03:56 INFO  : 'ps7_post_config' command is executed.
+21:03:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:56 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:03:56 INFO  : 'configparams force-mem-access 0' command is executed.
+21:03:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:03:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:57 INFO  : 'con' command is executed.
+21:03:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:03:57 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+21:04:50 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:04:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:05:01 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:05:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:05:23 INFO  : Disconnected from the channel tcfchan#15.
+21:05:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:24 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:05:24 ERROR : port closed
+21:05:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:05:24 ERROR : port closed
+21:05:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:05:30 INFO  : 'jtag frequency' command is executed.
+21:05:30 INFO  : Context for 'APU' is selected.
+21:05:30 INFO  : System reset is completed.
+21:05:33 INFO  : 'after 3000' command is executed.
+21:05:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+21:05:35 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+21:05:35 INFO  : Context for 'APU' is selected.
+21:05:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+21:05:37 INFO  : 'configparams force-mem-access 1' command is executed.
+21:05:37 INFO  : Context for 'APU' is selected.
+21:05:37 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+21:05:38 INFO  : 'ps7_init' command is executed.
+21:05:38 INFO  : 'ps7_post_config' command is executed.
+21:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:38 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:05:39 INFO  : 'configparams force-mem-access 0' command is executed.
+21:05:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:05:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:39 INFO  : 'con' command is executed.
+21:05:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:05:39 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+21:06:39 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:06:42 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:07:10 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:07:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:07:24 INFO  : Checking for BSP changes to sync application flags for project 'application_project_pmod_ad2'...
+21:07:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa is already opened
+
+21:07:35 INFO  : Disconnected from the channel tcfchan#18.
+21:07:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:07:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:07:36 ERROR : port closed
+21:07:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:07:36 ERROR : port closed
+21:07:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:07:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481C2A' is selected.
+21:07:41 INFO  : 'jtag frequency' command is executed.
+21:07:41 INFO  : Context for 'APU' is selected.
+21:07:41 INFO  : System reset is completed.
+21:07:44 INFO  : 'after 3000' command is executed.
+21:07:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}' command is executed.
+21:07:46 INFO  : Device configured successfully with "C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit"
+21:07:46 INFO  : Context for 'APU' is selected.
+21:07:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa'.
+21:07:49 INFO  : 'configparams force-mem-access 1' command is executed.
+21:07:49 INFO  : Context for 'APU' is selected.
+21:07:49 INFO  : Sourcing of 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl' is done.
+21:07:49 INFO  : 'ps7_init' command is executed.
+21:07:49 INFO  : 'ps7_post_config' command is executed.
+21:07:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:07:50 INFO  : The application 'C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:07:50 INFO  : 'configparams force-mem-access 0' command is executed.
+21:07:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}
+fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/hw/Pmod_AD2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:07:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:07:50 INFO  : 'con' command is executed.
+21:07:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:07:50 INFO  : Launch script is exported to file 'C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Pmod_AD2\application_project_pmod_ad2_system\_ide\scripts\debugger_application_project_pmod_ad2-default.tcl'
+21:13:39 INFO  : Disconnected from the channel tcfchan#22.

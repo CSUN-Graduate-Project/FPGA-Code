@@ -22,3 +22,9 @@ platform generate -quick
 platform generate
 platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper.xsa}
 platform generate -domains 
+platform generate
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate

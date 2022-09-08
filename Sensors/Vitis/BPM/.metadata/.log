@@ -1,0 +1,141 @@
+!SESSION 2022-09-05 12:31:22.627 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\BPM\.metadata\.bak_0.log
+Created Time: 2022-09-05 13:27:36.929
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:36.929
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:36.977
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:36.985
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/BPM/application_project_BPM_DDR/Debug/application_project_BPM_DDR.elf], Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.254
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/BPM/application_project_BPM_DDR/Debug/application_project_BPM_DDR.elf], Result: [null, ]. Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.254
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.329
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.455
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.472
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.477
+!MESSAGE XSCT Command: [con], Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:27:37.553
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-104: Launching Debugger_application_project_BPM_DDR-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:37:53.886
+!MESSAGE XSCT Command: [disconnect tcfchan#12], Thread: Thread-1636
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 13:37:53.891
+!MESSAGE XSCT command with result: [disconnect tcfchan#12], Result: [null, ]. Thread: Thread-1636
+!SESSION 2022-09-05 19:48:00.638 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-05 19:48:49.914
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-05 19:48:49.914
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-05 19:48:49.914
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2022-09-05 19:48:50.057
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:03.839
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:03.841
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-61
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:03.869
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:03.888
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-61
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:03.889
+!MESSAGE XSCT Command: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/BPM], Thread: Thread-61
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:03.892
+!MESSAGE XSCT command with result: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/BPM], Result: [null, ]. Thread: Thread-61
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:26.710
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:31.704
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:31.704
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-05 19:49:31.713
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2021.2/data]. Thread: Worker-2: Initializing s/w repositories
+!SESSION 2022-09-07 00:45:20.888 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 00:45:33.815
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 00:45:33.816
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-07 00:45:33.817
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2022-09-07 00:45:33.917
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:40.448
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-63
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:40.449
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:40.464
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-63
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:40.465
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:40.478
+!MESSAGE XSCT Command: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/BPM], Thread: Thread-63
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:40.481
+!MESSAGE XSCT command with result: [setws C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/BPM], Result: [null, ]. Thread: Thread-63
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:43.075
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:47.138
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:47.138
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 00:45:47.150
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2021.2/data]. Thread: Worker-0: Initializing s/w repositories
