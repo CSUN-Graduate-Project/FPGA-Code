@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="56" Path="C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/All_Sensors/All_Sensors.xpr">
+<Project Version="7" Minor="56" Path="C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ba41b59ea70642929d3549964f9ff7bf"/>
@@ -43,8 +43,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="6.2.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="6.2.0"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
-    <Option Name="BoardPart" Val="digilentinc.com:zybo-z7-20:part0:1.0"/>
-    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../../AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store"/>
+    <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -95,27 +94,54 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_xbar_0/All_Sensors_xbar_0.xci">
-          <Proxy FileSetName="All_Sensors_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_auto_pc_0/All_Sensors_auto_pc_0.xci">
-          <Proxy FileSetName="All_Sensors_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_processing_system7_0_0/All_Sensors_processing_system7_0_0.xci">
-          <Proxy FileSetName="All_Sensors_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_rst_ps7_0_50M_0/All_Sensors_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="All_Sensors_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_PmodTMP3_0_0/All_Sensors_PmodTMP3_0_0.xci">
           <Proxy FileSetName="All_Sensors_PmodTMP3_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_xbar_0/All_Sensors_xbar_0.xci">
+          <Proxy FileSetName="All_Sensors_xbar_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_PmodAD2_0_0/All_Sensors_PmodAD2_0_0.xci">
           <Proxy FileSetName="All_Sensors_PmodAD2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_processing_system7_0_0/All_Sensors_processing_system7_0_0.xci">
+          <Proxy FileSetName="All_Sensors_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="All_Sensors.bd" FileRelPathName="ip/All_Sensors_auto_pc_0/All_Sensors_auto_pc_0.xci">
+          <Proxy FileSetName="All_Sensors_auto_pc_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/All_Sensors/hdl/All_Sensors_wrapper.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ml module/DATA_PREP.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../ml module/DATA_PREP.vhd"/>
+          <Attr Name="ImportTime" Val="1662767446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ml module/SCORE_CALC.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../ml module/SCORE_CALC.vhd"/>
+          <Attr Name="ImportTime" Val="1662426954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ml module/SCORE_CALC_TOP.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../ml module/SCORE_CALC_TOP.vhd"/>
+          <Attr Name="ImportTime" Val="1662844438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -417,9 +443,7 @@
       <RQSFiles/>
     </Run>
   </Runs>
-  <Board>
-    <Jumpers/>
-  </Board>
+  <Board/>
   <DashboardSummary Version="1" Minor="0">
     <Dashboards>
       <Dashboard Name="default_dashboard">
