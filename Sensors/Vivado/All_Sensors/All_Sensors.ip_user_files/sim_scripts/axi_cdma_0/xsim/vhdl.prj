@@ -1,0 +1,10 @@
+vhdl lib_pkg_v1_0_2  \
+"../../../ipstatic/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vhdl lib_cdc_v1_0_2  \
+"../../../ipstatic/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../All_Sensors.gen/sources_1/ip/axi_cdma_0/sim/axi_cdma_0.vhd" \
+
+nosort

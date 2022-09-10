@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1658008851" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Heart_Rate_wrapper.dcp">
   <File Type="PA-TCL" Name="BPM_DDR_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="BPM_DDR_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BPM_DDR_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="BPM_DDR_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="BPM_DDR_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="BPM_DDR_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="BPM_DDR_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="BPM_DDR_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="BPM_DDR_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/BPM_DDR/BPM_DDR.bd">
@@ -92,10 +89,10 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Heart_Rate_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Heart_Rate_PmodAD2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BPM_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Heart_Rate_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BPM_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BPM_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Heart_Rate_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BPM_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="BPM_axi_bram_ctrl_0_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="BPM_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="BPM_auto_pc_1"/>

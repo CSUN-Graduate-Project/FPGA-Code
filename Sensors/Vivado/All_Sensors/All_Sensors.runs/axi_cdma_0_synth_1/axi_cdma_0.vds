@@ -1,0 +1,775 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Sep 10 15:26:33 2022
+# Process ID: 13612
+# Current directory: C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1
+# Command line: vivado.exe -log axi_cdma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_cdma_0.tcl
+# Log file: C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1/axi_cdma_0.vds
+# Journal file: C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1\vivado.jou
+# Running On: DESKTOP-EUSE40U, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 4, Host memory: 8522 MB
+#-----------------------------------------------------------
+source axi_cdma_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1398.496 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.srcs/sources_1/imports/ml module'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.srcs/sources_1/imports/ml module/score_calc_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/likea/Desktop/GradProject/Desktop/vivado-library-master'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.cache/ip 
+Command: synth_design -top axi_cdma_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1398.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/synth/axi_cdma_0.vhd:143]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 1 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 256 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-3491] module 'axi_cdma' declared at 'c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:15027' bound to instance 'U0' of component 'axi_cdma' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/synth/axi_cdma_0.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:15327]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_sg_wrap' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:13109]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reset' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen' (1#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized0' (1#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized1' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized1' (1#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+WARNING: [Synth 8-6014] Unused sequential element sig_axilite_por2rst_out_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:1197]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reset' (2#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reg_module' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:5316]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_lite_if' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+WARNING: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2267]
+WARNING: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2269]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2422]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.awready_i_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2254]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.rdy1_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2383]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_READ.arvalid_re_d1_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:3164]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_lite_if' (3#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_register' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:3810]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_register' (4#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:3810]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reg_module' (5#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:5316]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_cntlr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:7706]
+INFO: [Synth 8-226] default block is never used [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:8247]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_cntlr' (6#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:7706]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_sg_cntlr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:10237]
+INFO: [Synth 8-226] default block is never used [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:11929]
+INFO: [Synth 8-226] default block is never used [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:12106]
+WARNING: [Synth 8-6014] Unused sequential element sig_dm_cmd_pend_cntr_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:10937]
+WARNING: [Synth 8-6014] Unused sequential element sig_fetch_dbeat_cnt_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:11230]
+WARNING: [Synth 8-6014] Unused sequential element sig_ftch_sm_done_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:11188]
+WARNING: [Synth 8-6014] Unused sequential element sig_fetch_done_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:11233]
+WARNING: [Synth 8-6014] Unused sequential element sig_shtdwn_sm_flush_sg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:12668]
+WARNING: [Synth 8-6014] Unused sequential element sig_shtdwn_sm_set_ftch_halt_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:12669]
+WARNING: [Synth 8-6014] Unused sequential element sig_shtdwn_sm_set_dm_halt_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:12670]
+WARNING: [Synth 8-6014] Unused sequential element sig_shtdwn_sm_set_sts_halt_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:12671]
+WARNING: [Synth 8-6014] Unused sequential element sig_ftch_sm_ld_dm_cmd_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:10915]
+WARNING: [Synth 8-6014] Unused sequential element sig_ftch_sm_push_updt_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:11013]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_sg_cntlr' (7#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:10237]
+INFO: [Synth 8-638] synthesizing module 'axi_sg' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:28767]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_mngr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:20311]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_sm' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:18551]
+INFO: [Synth 8-226] default block is never used [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:18678]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_sm' (8#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:18551]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_pntr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:19535]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_pntr' (9#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:19535]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_cmdsts_if' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:19946]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_cmdsts_if' (10#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:19946]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_mngr' (11#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:20311]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_q_mngr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:22925]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_ftch_queue' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21334]
+WARNING: [Synth 8-6014] Unused sequential element sof_ftch_desc_del_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21489]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NOMULT_CHANNEL.counter_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21577]
+WARNING: [Synth 8-6014] Unused sequential element GEN_MM2S.reg1_64_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21659]
+WARNING: [Synth 8-6014] Unused sequential element GEN_MM2S.reg1_bd_64_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21660]
+WARNING: [Synth 8-6014] Unused sequential element GEN_MM2S.queue_dout_new_64_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21675]
+WARNING: [Synth 8-6014] Unused sequential element GEN_MM2S.queue_dout_new_bd_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21676]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_queue' (12#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:21334]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_ftch_q_mngr' (13#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:22925]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_mngr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:25105]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_sm' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:24193]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_sm' (14#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:24193]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_cmdsts_if' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:23882]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_cmdsts_if' (15#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:23882]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_mngr' (16#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:25105]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_q_mngr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:27329]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_updt_queue' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:25456]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_queue' (17#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:25456]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_updt_q_mngr' (18#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:27329]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_intrpt' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:27933]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_intrpt' (19#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:27933]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_datamover' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:17745]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_mm2s_basic_wrap' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:15584]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_reset' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:303]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_stat_rst_int_reg_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:337]
+WARNING: [Synth 8-6014] Unused sequential element sig_mmap_rst_reg_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:340]
+WARNING: [Synth 8-6014] Unused sequential element sig_stream_rst_reg_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:343]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_reset' (20#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_cmd_status' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:2691]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+WARNING: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:2020]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo' (21#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+WARNING: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:2020]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo__parameterized0' (21#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_cmd_status' (22#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:2691]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_rd_status_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7097]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_rd_status_cntl' (23#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7097]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_scc' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7570]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_type_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7945]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_tag_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7799]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_reg_full_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7951]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_scc' (24#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:7570]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_addr_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4556]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4966]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4973]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_addr_cntl' (25#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4556]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_rddata_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:5484]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_rddata_cntl' (26#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:5484]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_mm2s_basic_wrap' (27#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:15584]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_s2mm_basic_wrap' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:16514]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_wr_status_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:13571]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo__parameterized1' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (28#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (29#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (30#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (31#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo__parameterized1' (31#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_fifo__parameterized2' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (31#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (31#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (31#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_fifo__parameterized2' (31#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:1890]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_wr_status_cntl' (32#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:13571]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_scc_wr' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:9830]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_btt_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:10208]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_type_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:10209]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_reg_full_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:10215]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd2data_valid_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:10050]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd2addr_valid_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:10049]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_scc_wr' (33#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:9830]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_addr_cntl__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4556]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4966]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4973]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_addr_cntl__parameterized0' (33#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:4556]
+INFO: [Synth 8-638] synthesizing module 'axi_sg_wrdata_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:11534]
+WARNING: [Synth 8-6014] Unused sequential element sig_s2mm_strm_wready_del_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:11901]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_strt_strb_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:12837]
+WARNING: [Synth 8-6014] Unused sequential element sig_first_dbeat_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:13099]
+WARNING: [Synth 8-6014] Unused sequential element sig_single_dbeat_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:13101]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_wrdata_cntl' (34#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:11534]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_s2mm_basic_wrap' (35#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:16514]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg_datamover' (36#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:17745]
+INFO: [Synth 8-256] done synthesizing module 'axi_sg' (37#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_sg_v4_1_rfs.vhd:28767]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:55439]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_stat_rst_int_reg_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element sig_mmap_rst_reg_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element sig_stream_rst_reg_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (38#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:2014]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (39#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:2014]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (39#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (40#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (41#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (42#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (42#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-226] default block is never used [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:8048]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:8359]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (43#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (43#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (43#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (43#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (43#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (44#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (45#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (45#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (45#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (45#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (45#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_src_align_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:12886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_dest_align_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:12887]
+WARNING: [Synth 8-6014] Unused sequential element sig_coelsc_reg_empty_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:13225]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (46#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (47#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-226] default block is never used [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:8048]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:8359]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc__parameterized0' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (48#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_single_dbeat_reg was removed.  [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:17228]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (49#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (50#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (51#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (52#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (53#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_datamover_v5_1_vh_rfs.vhd:55439]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_sg_wrap' (54#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:13109]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma' (55#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/hdl/axi_cdma_v4_1_vh_rfs.vhd:15327]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_0' (56#1) [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/synth/axi_cdma_0.vhd:143]
+WARNING: [Synth 8-7129] Port debeat_saddr_lsb[1] in module axi_datamover_wr_demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port debeat_saddr_lsb[0] in module axi_datamover_wr_demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_strm_eop in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[7] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[6] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[5] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[4] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[3] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[2] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[1] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[0] in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port realign2wdc_eop_error in module axi_datamover_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2addr_data_rdy in module axi_datamover_addr_cntl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port num_valid_bytes[1] in module axi_datamover_strb_gen2__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port num_valid_bytes[0] in module axi_datamover_strb_gen2__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_addr_offset[1] in module axi_datamover_strb_gen2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port end_addr_offset[0] in module axi_datamover_strb_gen2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port calc2wsc_calc_error in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2wsc_fifo_empty in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_eop in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[25] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[24] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[23] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[22] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[21] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[20] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[19] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[18] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[17] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[16] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[15] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[14] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[13] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[12] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[11] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[10] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[9] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[8] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[7] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[6] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[5] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[4] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[3] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[2] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[1] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2wsc_bytes_rcvd[0] in module axi_datamover_wr_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secondary_awclk in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port user_reset in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[7] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[6] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[5] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[4] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[3] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[2] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[1] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cache_data[0] in module axi_datamover_cmd_status is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secondary_awclk in module axi_datamover_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port secondary_aresetn in module axi_datamover_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_cmd_wdata[74] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_cmd_wdata[73] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_cmd_wdata[72] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_cmd_wdata[71] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_dbg_sel[3] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_dbg_sel[2] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_dbg_sel[1] in module axi_datamover_s2mm_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_reset in module axi_datamover_fifo__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_async_rd_clk in module axi_datamover_fifo__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mstr2data_saddr_lsb[1] in module axi_datamover_rdmux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mstr2data_saddr_lsb[0] in module axi_datamover_rdmux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data2addr_data_rdy in module axi_datamover_addr_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port calc2rsc_calc_error in module axi_datamover_rd_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2rsc_calc_error in module axi_datamover_rd_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2rsc_fifo_empty in module axi_datamover_rd_status_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_cmd_wdata[74] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_cmd_wdata[73] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_cmd_wdata[72] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_cmd_wdata[71] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_dbg_sel[3] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_dbg_sel[2] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2s_dbg_sel[1] in module axi_datamover_mm2s_full_wrap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_strm_eop in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[7] in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[6] in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[5] in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[4] in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[3] in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[2] in module axi_sg_wrdata_cntl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s2mm_stbs_asserted[1] in module axi_sg_wrdata_cntl is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1546.285 ; gain = 147.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1550.445 ; gain = 151.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1550.445 ; gain = 151.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1550.445 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/axi_cdma_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/axi_cdma_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/axi_cdma_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.gen/sources_1/ip/axi_cdma_0/axi_cdma_0.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1575.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.362 . Memory (MB): peak = 1580.566 ; gain = 5.375
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1580.566 ; gain = 182.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1580.566 ; gain = 182.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1580.566 ; gain = 182.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sig_sm_state_reg' in module 'axi_cdma_simple_cntlr'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_ftch_sm_state_reg' in module 'axi_cdma_sg_cntlr'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_sts_sm_state_reg' in module 'axi_cdma_sg_cntlr'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_shtdwn_sm_state_reg' in module 'axi_cdma_sg_cntlr'
+INFO: [Synth 8-802] inferred FSM for state register 'ftch_cs_reg' in module 'axi_sg_ftch_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'updt_cs_reg' in module 'axi_sg_updt_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'pntr_cs_reg' in module 'axi_sg_updt_queue'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+             wait_for_go |                         00000010 |                              001
+               ld_dm_cmd |                         00000100 |                              010
+         get_mm2s_status |                         00001000 |                              011
+         get_s2mm_status |                         00010000 |                              100
+            score_status |                         00100000 |                              101
+               xfer_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_sm_state_reg' using encoding 'one-hot' in module 'axi_cdma_simple_cntlr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                sts_idle |                               00 |                               00
+         get_mm2s_status |                               01 |                               01
+         get_s2mm_status |                               10 |                               10
+               do_update |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_sts_sm_state_reg' using encoding 'sequential' in module 'axi_cdma_sg_cntlr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               ftch_idle |                               00 |                               00
+           chk_sg_dm_rdy |                               01 |                               01
+               load_desc |                               10 |                               10
+               xfer_done |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_ftch_sm_state_reg' using encoding 'sequential' in module 'axi_cdma_sg_cntlr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             shtdwn_idle |                        000000001 |                             0000
+            halt_ftch_dm |                        000000010 |                             0001
+          wait_ftch_idle |                        000000100 |                             0010
+        wait_ftch_update |                        000001000 |                             0011
+      wait_dm_halt_cmplt |                        000010000 |                             0100
+           wait_sts_idle |                        000100000 |                             0101
+         wait_sts_update |                        001000000 |                             0110
+          wait_sg_update |                        010000000 |                             0111
+            shtdwn_cmplt |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_shtdwn_sm_state_reg' using encoding 'one-hot' in module 'axi_cdma_sg_cntlr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+        fetch_descriptor |                               01 |                               01
+            fetch_status |                               10 |                               10
+             fetch_error |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ftch_cs_reg' using encoding 'sequential' in module 'axi_sg_ftch_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+         get_update_pntr |                              001 |                              001
+       update_descriptor |                              010 |                              010
+           update_status |                              011 |                              011
+            update_error |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'updt_cs_reg' using encoding 'sequential' in module 'axi_sg_updt_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+        read_curdesc_lsb |                               01 |                               01
+            write_status |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pntr_cs_reg' using encoding 'sequential' in module 'axi_sg_updt_queue'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1580.566 ; gain = 182.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 5     
+	   3 Input    4 Bit       Adders := 2     
+	   3 Input    3 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	              122 Bit    Registers := 2     
+	               71 Bit    Registers := 2     
+	               68 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 26    
+	               26 Bit    Registers := 2     
+	               16 Bit    Registers := 12    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 44    
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 478   
++---Muxes : 
+	   2 Input   75 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 20    
+	   2 Input   28 Bit        Muxes := 3     
+	   2 Input   26 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 9     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 21    
+	   8 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 23    
+	   4 Input    4 Bit        Muxes := 9     
+	   2 Input    3 Bit        Muxes := 12    
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 30    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 206   
+	   8 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 7     
+	   9 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (GEN_SG_MODE.I_SG_MODE_WRAP/I_SIMPLE_DMA_CNTLR/FSM_onehot_sig_sm_state_reg[7]) is unused and will be removed from module axi_cdma.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1580.566 ; gain = 182.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:13 . Memory (MB): peak = 1580.566 ; gain = 182.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:24 . Memory (MB): peak = 1614.117 ; gain = 215.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:26 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                 | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[2] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[2] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | INFERRED_GEN.data_reg[3] | 59     | 59         | 59     | 0       | 0      | 0      | 0      | 
+|dsrl__3     | INFERRED_GEN.data_reg[3] | 29     | 29         | 29     | 0       | 0      | 0      | 0      | 
+|dsrl__4     | INFERRED_GEN.data_reg[5] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | INFERRED_GEN.data_reg[5] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
+|dsrl__6     | INFERRED_GEN.data_reg[3] | 27     | 27         | 27     | 0       | 0      | 0      | 0      | 
+|dsrl__8     | INFERRED_GEN.data_reg[2] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    34|
+|2     |LUT1   |    22|
+|3     |LUT2   |   189|
+|4     |LUT3   |   408|
+|5     |LUT4   |   242|
+|6     |LUT5   |   251|
+|7     |LUT6   |   284|
+|8     |SRL16E |   132|
+|9     |FDRE   |  2073|
+|10    |FDSE   |    66|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1616.609 ; gain = 218.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 279 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:26 . Memory (MB): peak = 1616.609 ; gain = 187.992
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:34 . Memory (MB): peak = 1616.609 ; gain = 218.113
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1625.453 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1631.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: f3da002f
+INFO: [Common 17-83] Releasing license: Synthesis
+224 Infos, 165 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:56 . Memory (MB): peak = 1631.113 ; gain = 232.617
+INFO: [Common 17-1381] The checkpoint 'C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1/axi_cdma_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi_cdma_0, cache-ID = 0adba977184c7639
+INFO: [Coretcl 2-1174] Renamed 107 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/likea/Desktop/GradProject/github/FPGA-Code/Sensors/Vivado/All_Sensors/All_Sensors.runs/axi_cdma_0_synth_1/axi_cdma_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_cdma_0_utilization_synth.rpt -pb axi_cdma_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 10 15:29:40 2022...
