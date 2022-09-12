@@ -22,3 +22,9 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
+platform active {All_Sensors_wrapper}
+bsp reload
+platform generate -domains 
+platform active {All_Sensors_wrapper}
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/All_Sensors/All_Sensors_wrapper.xsa}
+platform generate -domains 
