@@ -37,8 +37,6 @@ end SCORE_CALC;
 
 architecture behavioral of SCORE_CALC is
 	
-    
-	
 	signal P_TEMP_S : unsigned(8 downto 0);
 	signal P_TEMP_NS : unsigned(8 downto 0);
 	
@@ -71,7 +69,7 @@ begin
 			elsif stress_score < not_stress_score then
 				status <= "10"; -- stressed
 			elsif stress_score = not_stress_score then
-				status <= "11"; -- rare, equality
+				status <= "01"; -- rare, equality
 			else
 				status <= "00";
 			end if;

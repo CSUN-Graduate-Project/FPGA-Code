@@ -1,8 +1,8 @@
 -----------------------------------------------------------------
 -- Created By: Richard Cho
--- Create Date: 8/17/2022
+-- Create Date: 3/17/2022
 -----------------------------------------------------------------
--- Testbench to test SCORE_CALC_TOP.vhd
+-- Testbench to test the machine learning module with training
 -----------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
