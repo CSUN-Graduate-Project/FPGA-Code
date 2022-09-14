@@ -17,9 +17,9 @@ entity DATA_PREP is
     port (
         clk : in std_logic; -- system clock
         rst : in std_logic; -- system reset
-		temp : in std_logic_vector (7 downto 0); -- celcius
-		eda : in std_logic_vector (7 downto 0); --micro siemens
-		hr : in std_logic_vector (7 downto 0); -- bpm
+		temp : in std_logic_vector (13 downto 0); -- celcius
+		eda : in std_logic_vector (13 downto 0); --micro siemens
+		hr : in std_logic_vector (13 downto 0); -- bpm
 		temp_out : out std_logic_vector (4 downto 0);
 		hr_out : out std_logic_vector (4 downto 0);
 		eda_out : out std_logic_vector (4 downto 0));
@@ -28,9 +28,9 @@ end DATA_PREP;
 
 architecture behavioral of DATA_PREP is
 
-signal temp_shift : unsigned(11 downto 0);
-signal eda_shift : unsigned(11 downto 0);
-signal hr_shift : unsigned(11 downto 0);
+signal temp_shift : unsigned(13 downto 0);
+signal eda_shift : unsigned(13 downto 0);
+signal hr_shift : unsigned(13 downto 0);
 
 begin
 
@@ -41,9 +41,12 @@ if(rst ='1') then
 	eda_shift <= (others => '0');
 	hr_shift <= (others => '0');
 elsif(rising_edge(clk)) then
-	temp_shift <= shift_left(unsigned(temp),1);
-	eda_shift <= shift_left(unsigned(eda),1);
-	hr_shift <= shift_left(unsigned(hr),1);
+	--temp_shift <= shift_left(unsigned(temp),4);
+	--eda_shift <= shift_left(unsigned(eda),4);
+	--hr_shift <= shift_left(unsigned(hr),4);
+	temp_shift <= unsigned(temp);
+	eda_shift <= unsigned(eda);
+	hr_shift <= unsigned(hr);
 end if;
 end process;
 

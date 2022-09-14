@@ -16,9 +16,9 @@ entity SCORE_CALC_TOP is
     port (
         clk : in std_logic; -- system clock
         rst : in std_logic; -- system reset
-		temp : in std_logic_vector (7 downto 0); -- celcius
-		eda : in std_logic_vector (7 downto 0); --micro siemens
-		hr : in std_logic_vector (7 downto 0); -- bpm
+		temp : in std_logic_vector (13 downto 0); -- celcius
+		eda : in std_logic_vector (13 downto 0); --micro siemens
+		hr : in std_logic_vector (13 downto 0); -- bpm
 		status : out std_logic_vector (1 downto 0));
 		
 end SCORE_CALC_TOP;
@@ -29,9 +29,9 @@ architecture behavioral of SCORE_CALC_TOP is
 	  PORT (
 		clk : in std_logic;
 		rst : in std_logic;
-		temp : in std_logic_vector(7 downto 0);
-		eda : in std_logic_vector(7 downto 0);
-		hr : in std_logic_vector(7 downto 0);
+		temp : in std_logic_vector(13 downto 0);
+		eda : in std_logic_vector(13 downto 0);
+		hr : in std_logic_vector(13 downto 0);
 		temp_out : out std_logic_vector(4 downto 0);
 		eda_out : out std_logic_vector(4 downto 0);
 		hr_out : out std_logic_vector(4 downto 0)
@@ -49,9 +49,9 @@ architecture behavioral of SCORE_CALC_TOP is
 	  );
 	END COMPONENT;
 	
-	signal temp_t : std_logic_vector(7 downto 0);
-	signal eda_t : std_logic_vector(7 downto 0);
-	signal hr_t : std_logic_vector(7 downto 0);
+	signal temp_t : std_logic_vector(4 downto 0);
+	signal eda_t : std_logic_vector(4 downto 0);
+	signal hr_t : std_logic_vector(4 downto 0);
 
 begin
 	DATA_PREP0 : DATA_PREP

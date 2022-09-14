@@ -53,7 +53,7 @@ architecture behavioral of SCORE_CALC is
 	
 	-- constants
 
-	constant zr : unsigned(9 downto 0) := "0000000000";
+	constant zr : unsigned(2 downto 0) := "000";
 	
 	constant P_STRESS : unsigned(8 downto 0) := "001000001"; 
 	constant P_NOT_STRESS : unsigned(8 downto 0) := "000001010";
@@ -66,9 +66,9 @@ begin
 		if (rst = '1') then
 			status <= "00";
 		elsif (rising_edge(clk)) then
-			if stress_score < not_stress_score then
+			if stress_score > not_stress_score then
 				status <= "01"; -- not stressed
-			elsif stress_score > not_stress_score then
+			elsif stress_score < not_stress_score then
 				status <= "10"; -- stressed
 			elsif stress_score = not_stress_score then
 				status <= "11"; -- rare, equality
@@ -168,7 +168,10 @@ begin
 				when others  => P_HR_S <= "000000001";
 			end case;
 			
-			stress_score <= P_TEMP_S + P_EDA_S + P_HR_S + P_STRESS;
+			--stress_score <= ("000" & P_TEMP_S) + ("000" & P_EDA_S) + ("000" & P_HR_S) + ("000" & P_STRESS);
+			stress_score <= (zr & P_TEMP_S) + (zr & P_EDA_S) + (zr & P_HR_S) + (zr & P_STRESS);
+            --stress_score <= "000000000001" + "000000000001" + "000000000001" + "000000000001";
+
 
 		end if;
 		
@@ -263,27 +266,10 @@ begin
 				when others  => P_HR_NS <= "000000001";
 			end case;
 			
-			not_stress_score <= P_TEMP_NS + P_EDA_NS + P_HR_NS + P_NOT_STRESS;
+			not_stress_score <= (zr & P_TEMP_NS) + (zr & P_EDA_NS) + (zr & P_HR_NS) + (zr & P_NOT_STRESS);
 			
 	   end if;
 	end process;
 	
-	process(clk,rst) -- output block
-	begin
-		if (rst = '1') then
-			status <= "00";
-		elsif (rising_edge(clk)) then
-			if stress_score < not_stress_score then
-				status <= "01"; -- not stressed
-			elsif stress_score > not_stress_score then
-				status <= "10"; -- stressed
-			elsif stress_score = not_stress_score then
-				status <= "11"; -- rare, equality
-			else
-				status <= "00";
-			end if;
-
-		end if;	
-	end process;	
 	
 end behavioral;
