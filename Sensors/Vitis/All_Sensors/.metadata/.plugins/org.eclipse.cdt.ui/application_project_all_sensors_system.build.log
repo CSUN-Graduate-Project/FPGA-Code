@@ -1,10 +1,10 @@
-22:54:42 **** Incremental Build of configuration Debug for project application_project_all_sensors_system ****
+00:42:13 **** Incremental Build of configuration Debug for project application_project_all_sensors_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55112 C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/All_Sensors_wrapper/export/All_Sensors_wrapper/All_Sensors_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors_system/Debug/system.bif
+generate_system_bif.bat 64039 C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/All_Sensors_wrapper/export/All_Sensors_wrapper/All_Sensors_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors_system/Debug/system.bif
 sdcard_gen --xpfm C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/All_Sensors_wrapper/export/All_Sensors_wrapper/All_Sensors_wrapper.xpfm --sys_config All_Sensors_wrapper --bif C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors_system/Debug/system.bif --bitstream C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors/_ide/bitstream/All_Sensors_wrapper.bit --elf C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors/Debug/application_project_all_sensors.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors/_ide/bitstream/All_Sensors_wrapper.bit
 Running C:/Xilinx/Vitis/2021.2/bin/bootgen  -image C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/All_Sensors/application_project_all_sensors_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-22:54:48 Build Finished (took 5s.898ms)
+00:42:19 Build Finished (took 5s.932ms)
 

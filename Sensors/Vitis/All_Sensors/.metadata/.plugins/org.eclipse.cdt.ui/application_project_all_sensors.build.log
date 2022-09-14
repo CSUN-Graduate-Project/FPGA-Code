@@ -1,4 +1,4 @@
-22:54:41 **** Incremental Build of configuration Debug for project application_project_all_sensors ****
+00:42:12 **** Incremental Build of configuration Debug for project application_project_all_sensors ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,5 +6,5 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
 
-22:54:42 Build Finished (took 283ms)
+00:42:13 Build Finished (took 283ms)
 

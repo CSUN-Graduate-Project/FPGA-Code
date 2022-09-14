@@ -10,8 +10,11 @@
 
 #define global_timer_clk 333000000 //global timer clock frequency 333MHz
 #define global_time_base 0xF8F00200
-#define size 1000000 //increase size for continous data or dont use array
+#define size 10000000 //increase size for continous data or dont use array
 #define window_size 700 //window size of 50 elements
+//SCL low and high registers for changing I2C speed
+#define XIIC_THIGH_REG_OFFSET	0x13C
+#define XIIC_TLOW_REG_OFFSET	0x140
 
 //Pulse Sensor
 PmodAD2 myDevice;
@@ -23,7 +26,6 @@ static u16 ADC = 0;
 
 //TMP3 Sensor
 PmodTMP3 myDevice2;
-
 
 //Timer function
 static uint64_t timestamp[size] = {'\0'};
@@ -78,8 +80,21 @@ int main()
     print("Hello World\n\r");
     print("Successfully ran Hello World application");
 
+
     //initialize PMOD AD2
     AD2_begin(&myDevice, XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, AD2_IIC_ADDR);
+
+    //Change I2C operating frequency
+	// Old SCL parameters
+	int t_high = XIic_ReadReg(XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, XIIC_THIGH_REG_OFFSET);
+	int t_low  = XIic_ReadReg(XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, XIIC_TLOW_REG_OFFSET);
+	printf("T_high = %d, T_low = %d\n", t_high, t_low);
+
+	// New SCL parameters
+	t_high = 63;
+	t_low  = 63;
+	XIic_WriteReg(XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, XIIC_THIGH_REG_OFFSET, t_high);
+	XIic_WriteReg(XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, XIIC_TLOW_REG_OFFSET, t_low);
 
     //initialize PMOD TMP3
 	TMP3_begin(&myDevice2, XPAR_PMODTMP3_0_AXI_LITE_IIC_BASEADDR, TMP3_ADDR);
@@ -223,92 +238,3 @@ uint64_t time_elapsed() {
 	}
 	//read previously, go to the previous step. Otherwise the 64-bit timer counter value is correct.
 }
-
-
-/*
-Add the following headers:
-xparameters.h  Contains system parameters for the Xilinx device driver
-PmodTMP3.h     Contains TMP3 driver functions
-sleep.h        Contains functions for creating a pause in the execution
-xil_printf.h   To Print to the STDOUT
-
-#include "xparameters.h"
-#include "PmodTMP3.h"
-#include "sleep.h"
-#include "xil_printf.h"
-
-
-
-PmodTMP3 myDevice;
-
-int main() {
-    // Print a message indicating the program started
-	xil_printf("Program started\r\n");
-    // Note You need to update the BSP to forward STDOUT to Pmod UART.
-    // Initialize the device
-	TMP3_begin(&myDevice, XPAR_PMODTMP3_0_AXI_LITE_IIC_BASEADDR, TMP3_ADDR);
-
-	   int temp  = 0.0;
-	   int temp2 = 0.0;
-
-	   while (1) {
-	      temp  = TMP3_getTemp(&myDevice);
-	      temp2 = TMP3_CtoF(temp);
-
-	      //xil_printf does not include decimals : double, float
-	      xil_printf("Temperature: %d in Celsius\n\r", temp);
-	      xil_printf("Temperature: %d in Fahrenheit\n\r", temp2);
-	      print("\n\r");
- 	      sleep(1); // Delay
-}
-	   TMP3_end(&myDevice);
-	   xil_printf("PmodTMP3 Disconnected\n\r");
-	   xil_printf("Closing UART Connection\n\r");
-	   return 0;
-}*/
-
-
-/*
-#include <stdio.h>
-#include "PmodAD2.h"
-#include "sleep.h"
-#include "xil_cache.h"
-#include "xparameters.h"
-
-PmodAD2 myDevice;
-
-
-u16 conv;
-u8 channel;
-double voltage;
-
-int main() {
-AD2_begin(&myDevice, XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, AD2_IIC_ADDR);
-
-// Turn on channel 0, pin V1
-//AD2_WriteConfig(&myDevice, AD2_CONFIG_CH0);
-
-// Turn on channel 0 & 1, pin V1 & V2
-AD2_WriteConfig(&myDevice, AD2_CONFIG_CH0 | AD2_CONFIG_CH1);
-
-// Turn on all channels
-//AD2_WriteConfig(&myDevice, AD2_DEFAULT_CONFIG);
-
-	while(1) {
-    AD2_ReadConv(&myDevice, &conv);
-
-    // Keep 12-bit result, masking or bit select
-    //conv &= 0xFFF;
-
- 	//Scale captured data such that 0x000:0xFFF => 0.0:3.3
-    voltage = (double) (conv & AD2_DATA_MASK) * 3.3 / (AD2_DATA_MASK + 1);
-
-    // Pull channel read information out of conv
-    channel = (conv & AD2_CHANNEL_MASK) >> AD2_CHANNEL_BIT;
-
-	printf("Pin V%d = %.02f V \r\n", channel + 1, voltage); //iterates
-	sleep(1);
-	      }
-
-}
-*/
