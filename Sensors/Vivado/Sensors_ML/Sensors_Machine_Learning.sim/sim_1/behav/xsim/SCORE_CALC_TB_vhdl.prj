@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Sensors_Machine_Learning.srcs/sources_1/imports/ml module/DATA_PREP.vhd" \
+"../../../../Sensors_Machine_Learning.srcs/sources_1/imports/ml module/SCORE_CALC.vhd" \
+"../../../../Sensors_Machine_Learning.srcs/sources_1/imports/ml module/SCORE_CALC_TOP.vhd" \
+"../../../../Sensors_Machine_Learning.srcs/sources_1/imports/ml module/SCORE_CALC_TB.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="application_project_sensors_ml_system" platform="C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper/export/Sensors_ML_wrapper/Sensors_ML_wrapper.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" sysConfig="Sensors_ML_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.500489156">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="application_project_sensors_ml" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1372591938">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="application_project_sensors_ml" domainName="standalone_ps7_cortexa9_0" domainPrettyName="standalone_ps7_cortexa9_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

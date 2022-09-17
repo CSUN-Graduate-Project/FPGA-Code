@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="true" description="Delete 3 resources" element1="/xgpio_example_1_system" element2="/xgpio_low_level_example_1_system" element3="/xgpio_tapp_example_1_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1663447756146"/>
+</session>
