@@ -9,7 +9,7 @@
 # -out option specifies the output directory of the platform project.
 
 platform create -name {Sensors_ML_wrapper}\
--hw {C:\Users\luisr\.Xilinx\VHDL_Projects\Graduate_Project\FPGA\Sensors_Machine_Learning\Sensors_ML_wrapper.xsa}\
+-hw {C:\Users\luisr\.Xilinx\VHDL_Projects\Graduate_Project\FPGA\Sensors_ML\Sensors_ML_wrapper.xsa}\
 -out {C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Sensors_ML}
 
 platform write
@@ -19,8 +19,4 @@ platform active {Sensors_ML_wrapper}
 domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
-bsp reload
-platform generate
-platform generate
-platform generate
 platform generate

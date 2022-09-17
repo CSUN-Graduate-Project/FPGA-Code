@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/src/PmodAD2_axi_iic_0_0/sim/PmodAD2_axi_iic_0_0.vhd" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodTMP3_0_0/src/PmodTMP3_axi_iic_0_0/sim/PmodTMP3_axi_iic_0_0.vhd" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_rst_ps7_0_50M_0/sim/Sensors_ML_rst_ps7_0_50M_0.vhd" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/sim/Sensors_ML_SCORE_CALC_TOP_0_0.vhd" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_0_0/sim/Sensors_ML_axi_gpio_0_0.vhd" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/sim/Sensors_ML_axi_gpio_1_0.vhd" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/sim/Sensors_ML.vhd" \
+
+nosort

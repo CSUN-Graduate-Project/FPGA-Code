@@ -1,8 +1,0 @@
-0.7
-2020.2
-Oct 19 2021
-03:16:22
-C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_Machine_Learning/Sensors_Machine_Learning.srcs/sources_1/imports/ml module/DATA_PREP.vhd,1663358295,vhdl,,,,data_prep,,,,,,,,
-C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_Machine_Learning/Sensors_Machine_Learning.srcs/sources_1/imports/ml module/SCORE_CALC.vhd,1663358295,vhdl,,,,score_calc,,,,,,,,
-C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_Machine_Learning/Sensors_Machine_Learning.srcs/sources_1/imports/ml module/SCORE_CALC_TB.vhd,1663358295,vhdl,,,,score_calc_tb,,,,,,,,
-C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_Machine_Learning/Sensors_Machine_Learning.srcs/sources_1/imports/ml module/SCORE_CALC_TOP.vhd,1663358295,vhdl,,,,score_calc_top,,,,,,,,

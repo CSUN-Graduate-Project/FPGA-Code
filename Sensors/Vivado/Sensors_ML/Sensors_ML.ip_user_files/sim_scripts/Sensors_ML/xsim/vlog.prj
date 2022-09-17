@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/drivers/PmodAD2_v1_0/src" --include "../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodTMP3_0_0/drivers/PmodTMP3_v1_0/src" --include "../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ipshared/ec67/hdl" --include "../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ipshared/3007/hdl" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/src/pmod_concat.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/sim/PmodAD2_pmod_bridge_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/src/PmodAD2_xlconstant_0_0/sim/PmodAD2_xlconstant_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ipshared/3f41/src/PmodAD2.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/sim/Sensors_ML_PmodAD2_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodTMP3_0_0/src/PmodTMP3_pmod_bridge_0_0/sim/PmodTMP3_pmod_bridge_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodTMP3_0_0/src/PmodTMP3_xlconstant_0_0/sim/PmodTMP3_xlconstant_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ipshared/e241/src/PmodTMP3.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodTMP3_0_0/sim/Sensors_ML_PmodTMP3_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_processing_system7_0_0/sim/Sensors_ML_processing_system7_0_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_xbar_0/sim/Sensors_ML_xbar_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_auto_pc_0/sim/Sensors_ML_auto_pc_0.v" \
+"../../../../Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_xlconcat_0_0/sim/Sensors_ML_xlconcat_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
