@@ -1,0 +1,2287 @@
+!SESSION 2022-09-21 10:16:32.185 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Thermocouple_SPI\.metadata\.bak_0.log
+Created Time: 2022-09-21 20:07:34.943
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:34.943
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-161: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:34.953
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-161: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-09-21 20:07:34.957
+!MESSAGE Generating MD5 hash for file: C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Thermocouple_SPI\SPI_wrapper\export\SPI_wrapper\sw\SPI_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:34.958
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-161: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:34.961
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-161: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:49.015
+!MESSAGE XSCT Command: [disconnect tcfchan#66], Thread: Thread-2950
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:49.041
+!MESSAGE XSCT command with result: [disconnect tcfchan#66], Result: [null, ]. Thread: Thread-2950
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.048
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.056
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#71]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.057
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.064
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.064
+!MESSAGE XSCT Command: [version -server], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.064
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.071
+!MESSAGE XSCT Command: [version], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.071
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.071
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.079
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.080
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.100
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.100
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.105
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.105
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.131
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.131
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.138
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.138
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.155
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.163
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.163
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.163
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.189
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.193
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.193
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.218
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.218
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.222
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.222
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.255
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.257
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.278
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.278
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.278
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.278
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.292
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.292
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.355
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:50.355
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.370
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.392
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.401
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.402
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.420
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.420
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.519
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:53.519
+!MESSAGE XSCT Command: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.883
+!MESSAGE XSCT command with result: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.929
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.957
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.957
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.959
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, SPI_wrapper_1]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.959
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.967
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.968
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.974
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.982
+!MESSAGE XSCT Command: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.983
+!MESSAGE XSCT command with result: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:55.986
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:56.896
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:56.896
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:56.956
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:56.956
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:56.965
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:56.965
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.350
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.350
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.409
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.498
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.524
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.524
+!MESSAGE XSCT Command: [con], Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:07:57.620
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-148: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-09-21 20:28:57.438
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:188)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:666)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:684)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:929)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:60)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:34)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:110)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:278)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:52)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:458)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:167)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-09-21 20:28:57.439
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:188)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:666)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:684)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:929)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:60)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:34)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:120)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:278)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:52)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:458)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:167)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:101)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:423)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:28:59.461
+!MESSAGE XSCT Command: [disconnect tcfchan#71], Thread: Thread-3005
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:28:59.467
+!MESSAGE XSCT command with result: [disconnect tcfchan#71], Result: [null, ]. Thread: Thread-3005
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.475
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.481
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#72]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.481
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.531
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.531
+!MESSAGE XSCT Command: [version -server], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.570
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.571
+!MESSAGE XSCT Command: [version], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.572
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.572
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.578
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.579
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.599
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.600
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.608
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.608
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.632
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.632
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.640
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.640
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.661
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.662
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.669
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.670
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.699
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.699
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.711
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A (closed)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:00.712
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A (closed)" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:03.745
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A (closed)" && level==1}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:06.745
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A (closed)" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:09.769
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A (closed)" && level==1}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.010
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.012
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#72]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.012
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.018
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.019
+!MESSAGE XSCT Command: [version -server], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.020
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.020
+!MESSAGE XSCT Command: [version], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.021
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.021
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.027
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.028
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.050
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.051
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.057
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.058
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.077
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.078
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.083
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.108
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.109
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.116
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.117
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.139
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.140
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.148
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.149
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.171
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.172
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.182
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.183
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.203
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.204
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.228
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.228
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.229
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.230
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.281
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.282
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.353
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:30.354
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.375
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.394
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.399
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.400
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.418
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.419
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.484
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:33.485
+!MESSAGE XSCT Command: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.816
+!MESSAGE XSCT command with result: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.850
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.861
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.861
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.915
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, SPI_wrapper_1]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.915
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.917
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.917
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.927
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.927
+!MESSAGE XSCT Command: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.930
+!MESSAGE XSCT command with result: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:35.930
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:36.737
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:36.738
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:36.746
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:36.746
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:36.758
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:36.758
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.106
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.107
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.151
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.293
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.354
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.355
+!MESSAGE XSCT Command: [con], Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 20:29:37.416
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-172: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:22.760
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:22.768
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:22.769
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:22.770
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-09-21 21:05:22.770
+!MESSAGE Generating MD5 hash for file: C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Thermocouple_SPI\SPI_wrapper\export\SPI_wrapper\sw\SPI_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:22.770
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:22.770
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:40.142
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-187: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:40.152
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-187: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:40.152
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-187: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:40.156
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-187: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-09-21 21:05:40.157
+!MESSAGE Generating MD5 hash for file: C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Thermocouple_SPI\SPI_wrapper\export\SPI_wrapper\sw\SPI_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:40.158
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-187: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:40.160
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-187: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:51.185
+!MESSAGE XSCT Command: [disconnect tcfchan#72], Thread: Thread-3174
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:51.189
+!MESSAGE XSCT command with result: [disconnect tcfchan#72], Result: [null, ]. Thread: Thread-3174
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.294
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.294
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#75]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.294
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.474
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.474
+!MESSAGE XSCT Command: [version -server], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.479
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.480
+!MESSAGE XSCT Command: [version], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.480
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.480
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.483
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.491
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.516
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.517
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.528
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.528
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.544
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.550
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.555
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.559
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.583
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.585
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.593
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.593
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.616
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.625
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.632
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.652
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.652
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.662
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.662
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.682
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.682
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.699
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.699
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.800
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.802
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.812
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.812
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.878
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:05:58.884
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.900
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.914
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.923
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.940
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.948
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.978
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:01.978
+!MESSAGE XSCT Command: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.313
+!MESSAGE XSCT command with result: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.356
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.362
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.362
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.411
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, SPI_wrapper_1]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.411
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.416
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.416
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.430
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.434
+!MESSAGE XSCT Command: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.437
+!MESSAGE XSCT command with result: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:04.438
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.183
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.183
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.191
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.199
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.207
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.207
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.563
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.572
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.621
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.756
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.784
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.785
+!MESSAGE XSCT Command: [con], Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:06:05.875
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-186: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:36.788
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-191: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:36.797
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-191: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:36.798
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-191: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:36.801
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-191: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-09-21 21:39:36.804
+!MESSAGE Generating MD5 hash for file: C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Thermocouple_SPI\SPI_wrapper\export\SPI_wrapper\sw\SPI_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:36.804
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-191: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:36.804
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-191: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:50.728
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-192: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:50.737
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-192: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:50.737
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-192: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:50.743
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-192: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-09-21 21:39:50.744
+!MESSAGE Generating MD5 hash for file: C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\Thermocouple_SPI\SPI_wrapper\export\SPI_wrapper\sw\SPI_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:50.744
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-192: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:39:50.747
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/sw/SPI_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-192: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:13.115
+!MESSAGE XSCT Command: [disconnect tcfchan#75], Thread: Thread-3253
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:13.139
+!MESSAGE XSCT command with result: [disconnect tcfchan#75], Result: [null, ]. Thread: Thread-3253
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.137
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.179
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#78]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.195
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.195
+!MESSAGE XSCT Command: [version -server], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.195
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.195
+!MESSAGE XSCT Command: [version], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.195
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.195
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.203
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.203
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.224
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.233
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.241
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.242
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.259
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.269
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.270
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.285
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.285
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.293
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.293
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.316
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.316
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.326
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.326
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.342
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.342
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.354
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.355
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.373
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.373
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.392
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.393
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:14.434
+!MESSAGE XSCT command with result: [jtag frequency], Result: [{Format=port closed, Time=1663821614434, Code=1}, ]. Thread: Worker-184: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.229
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.229
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#78]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.229
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.243
+!MESSAGE XSCT Command: [version -server], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.276
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.276
+!MESSAGE XSCT Command: [version], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.276
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.284
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.291
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.316
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.316
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.320
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.320
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.340
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.340
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.350
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.350
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.369
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.378
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.384
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.384
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.412
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.412
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.420
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.420
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.438
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.438
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.447
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.449
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.473
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.473
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.491
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481C2A" && level == 0}], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.491
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.499
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.500
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.509
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.509
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.577
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:35.577
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.600
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.624
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481C2A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.624
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.643
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.648
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.673
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481C2A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481C2A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:38.681
+!MESSAGE XSCT Command: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:40.997
+!MESSAGE XSCT command with result: [fpga -file C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/bitstream/SPI_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.051
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.095
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.095
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.105
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/SPI_wrapper/export/SPI_wrapper/hw/SPI_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, SPI_wrapper_1]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.105
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.105
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.105
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.121
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.121
+!MESSAGE XSCT Command: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.121
+!MESSAGE XSCT command with result: [source C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.121
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.846
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.846
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.851
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.859
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.868
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:41.868
+!MESSAGE XSCT Command: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.196
+!MESSAGE XSCT command with result: [dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.196
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.253
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.372
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.390
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.390
+!MESSAGE XSCT Command: [con], Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-21 21:40:42.431
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-174: Launching Debugger_application_project_thermocouple_spi-Default
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.068
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.084
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.115
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.131
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.146
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.177
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.194
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.209
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.224
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.255
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.272
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.303
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.333
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.364
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.394
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.444
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.475
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.476
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.476
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.477
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.478
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.478
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.478
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.478
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.479
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.479
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.480
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.481
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.481
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.481
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.481
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.482
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.482
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.482
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.483
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.483
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.484
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.484
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.485
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.485
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.485
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.485
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.485
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-21 23:26:58.486
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:30.673
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:30.673
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:30.729
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:30.825
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:30.841
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:30.897
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.017
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.040
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.051
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.064
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.096
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.104
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.104
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.104
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.120
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.155
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.160
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.160
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.160
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.167
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.175
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.183
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.189
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.189
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.189
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-22 20:30:31.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-22 20:53:15.236
+!MESSAGE XSCT Command: [disconnect tcfchan#78], Thread: Thread-3333
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-22 20:53:15.271
+!MESSAGE XSCT command with result: [disconnect tcfchan#78], Result: [null, ]. Thread: Thread-3333

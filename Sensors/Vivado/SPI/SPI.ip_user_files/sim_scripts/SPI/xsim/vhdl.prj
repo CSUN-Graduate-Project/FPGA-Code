@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../SPI.gen/sources_1/bd/SPI/sim/SPI.vhd" \
+
+nosort
