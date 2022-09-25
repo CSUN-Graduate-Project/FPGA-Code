@@ -1,2 +1,6 @@
-2022-09-17T14:23:46.3662693000-Nothing to build in platform 'Sensors_ML_wrapper'
+2022-09-25T15:25:08.718036300255-15:25:08 **** Incremental Build of project Sensors_ML_wrapper ****
+000-buildplatform.bat 51241 Sensors_ML_wrapper no_domain_build 
+000-XSDB Server Channel: tcfchan#7
+00255-
+15:25:12 Build Finished (took 3s.899ms)
 

@@ -123,8 +123,14 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/impl_1/Sensors_ML_wrapper.dcp
+OPTRACE "create in-memory project" START { }
+  create_project -in_memory -part xc7z020clg400-1
+  set_property board_part_repo_paths {C:/Users/luisr/AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store} [current_project]
+  set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+OPTRACE "create in-memory project" END { }
+OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.cache/wt [current_project]
   set_property parent.project_path C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.xpr [current_project]
   set_property ip_repo_paths C:/Users/luisr/Desktop/vivado-library-master [current_project]
@@ -132,6 +138,24 @@ set rc [catch {
   set_property ip_output_repo C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+OPTRACE "set parameters" END { }
+OPTRACE "add files" START { }
+  add_files -quiet C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/Sensors_ML_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/sources_1/bd/Sensors_ML/Sensors_ML.bd
+  set_param project.isImplRun false
+OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/constrs_1/imports/new/Sensors_Const.xdc
+OPTRACE "read constraints: implementation" END { }
+OPTRACE "add files" END { }
+OPTRACE "link_design" START { }
+  set_param project.isImplRun true
+  link_design -top Sensors_ML_wrapper -part xc7z020clg400-1 
+OPTRACE "link_design" END { }
+  set_param project.isImplRun false
+OPTRACE "gray box cells" START { }
+OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }

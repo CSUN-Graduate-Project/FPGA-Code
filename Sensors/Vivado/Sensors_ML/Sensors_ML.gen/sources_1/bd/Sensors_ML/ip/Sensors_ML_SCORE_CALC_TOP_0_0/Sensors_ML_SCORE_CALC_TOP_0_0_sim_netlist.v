@@ -1,10 +1,10 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Fri Sep 16 19:52:49 2022
+// Date        : Sun Sep 25 15:16:39 2022
 // Host        : DESKTOP-AJV8A0J running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_Machine_Learning/Sensors_Machine_Learning.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_sim_netlist.v
+//               c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_sim_netlist.v
 // Design      : Sensors_ML_SCORE_CALC_TOP_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -55,7 +55,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
     \temp_out_reg[0]_1 ,
     temp,
     clk,
-    rst,
+    \temp_out_reg[0]_2 ,
     hr,
     eda);
   output [8:0]out;
@@ -66,7 +66,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   output [8:0]\temp_out_reg[0]_1 ;
   input [13:0]temp;
   input clk;
-  input rst;
+  input \temp_out_reg[0]_2 ;
   input [13:0]hr;
   input [13:0]eda;
 
@@ -130,7 +130,6 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   wire \hr_out_reg[3]_i_1_n_0 ;
   wire [13:0]hr_shift;
   wire [8:0]out;
-  wire rst;
   wire [13:0]temp;
   wire [4:0]temp_out;
   wire \temp_out[0]_i_1_n_0 ;
@@ -148,6 +147,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   wire \temp_out[4]_i_3_n_0 ;
   wire [8:0]\temp_out_reg[0]_0 ;
   wire [8:0]\temp_out_reg[0]_1 ;
+  wire \temp_out_reg[0]_2 ;
   wire [13:0]temp_shift;
 
   LUT6 #(
@@ -272,115 +272,115 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   FDCE \eda_out_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\eda_out[0]_i_1_n_0 ),
         .Q(eda_out[0]));
   FDCE \eda_out_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\eda_out[1]_i_1_n_0 ),
         .Q(eda_out[1]));
   FDCE \eda_out_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\eda_out[2]_i_1_n_0 ),
         .Q(eda_out[2]));
   FDCE \eda_out_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\eda_out[3]_i_1_n_0 ),
         .Q(eda_out[3]));
   FDCE \eda_out_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\eda_out[4]_i_1_n_0 ),
         .Q(eda_out[4]));
   FDCE \eda_shift_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[0]),
         .Q(eda_shift[0]));
   FDCE \eda_shift_reg[10] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[10]),
         .Q(eda_shift[10]));
   FDCE \eda_shift_reg[11] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[11]),
         .Q(eda_shift[11]));
   FDCE \eda_shift_reg[12] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[12]),
         .Q(eda_shift[12]));
   FDCE \eda_shift_reg[13] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[13]),
         .Q(eda_shift[13]));
   FDCE \eda_shift_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[1]),
         .Q(eda_shift[1]));
   FDCE \eda_shift_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[2]),
         .Q(eda_shift[2]));
   FDCE \eda_shift_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[3]),
         .Q(eda_shift[3]));
   FDCE \eda_shift_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[4]),
         .Q(eda_shift[4]));
   FDCE \eda_shift_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[5]),
         .Q(eda_shift[5]));
   FDCE \eda_shift_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[6]),
         .Q(eda_shift[6]));
   FDCE \eda_shift_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[7]),
         .Q(eda_shift[7]));
   FDCE \eda_shift_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[8]),
         .Q(eda_shift[8]));
   FDCE \eda_shift_reg[9] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(eda[9]),
         .Q(eda_shift[9]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
@@ -1228,7 +1228,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   FDCE \hr_out_reg[0] 
        (.C(clk),
         .CE(hr_out0),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\hr_out[0]_i_1_n_0 ),
         .Q(hr_out[0]));
   MUXF7 \hr_out_reg[0]_i_2 
@@ -1244,13 +1244,13 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   FDCE \hr_out_reg[1] 
        (.C(clk),
         .CE(hr_out0),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\hr_out[1]_i_1_n_0 ),
         .Q(hr_out[1]));
   FDCE \hr_out_reg[2] 
        (.C(clk),
         .CE(hr_out0),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\hr_out_reg[2]_i_1_n_0 ),
         .Q(hr_out[2]));
   MUXF7 \hr_out_reg[2]_i_1 
@@ -1261,7 +1261,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   FDCE \hr_out_reg[3] 
        (.C(clk),
         .CE(hr_out0),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\hr_out_reg[3]_i_1_n_0 ),
         .Q(hr_out[3]));
   MUXF7 \hr_out_reg[3]_i_1 
@@ -1272,91 +1272,91 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   FDCE \hr_out_reg[4] 
        (.C(clk),
         .CE(hr_out0),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\hr_out[4]_i_2_n_0 ),
         .Q(hr_out[4]));
   FDCE \hr_shift_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[0]),
         .Q(hr_shift[0]));
   FDCE \hr_shift_reg[10] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[10]),
         .Q(hr_shift[10]));
   FDCE \hr_shift_reg[11] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[11]),
         .Q(hr_shift[11]));
   FDCE \hr_shift_reg[12] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[12]),
         .Q(hr_shift[12]));
   FDCE \hr_shift_reg[13] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[13]),
         .Q(hr_shift[13]));
   FDCE \hr_shift_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[1]),
         .Q(hr_shift[1]));
   FDCE \hr_shift_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[2]),
         .Q(hr_shift[2]));
   FDCE \hr_shift_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[3]),
         .Q(hr_shift[3]));
   FDCE \hr_shift_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[4]),
         .Q(hr_shift[4]));
   FDCE \hr_shift_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[5]),
         .Q(hr_shift[5]));
   FDCE \hr_shift_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[6]),
         .Q(hr_shift[6]));
   FDCE \hr_shift_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[7]),
         .Q(hr_shift[7]));
   FDCE \hr_shift_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[8]),
         .Q(hr_shift[8]));
   FDCE \hr_shift_reg[9] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(hr[9]),
         .Q(hr_shift[9]));
   LUT6 #(
@@ -1486,134 +1486,136 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
   FDCE \temp_out_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\temp_out[0]_i_1_n_0 ),
         .Q(temp_out[0]));
   FDCE \temp_out_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\temp_out[1]_i_1_n_0 ),
         .Q(temp_out[1]));
   FDCE \temp_out_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\temp_out[2]_i_1_n_0 ),
         .Q(temp_out[2]));
   FDCE \temp_out_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\temp_out[3]_i_1_n_0 ),
         .Q(temp_out[3]));
   FDCE \temp_out_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(\temp_out[4]_i_1_n_0 ),
         .Q(temp_out[4]));
   FDCE \temp_shift_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[0]),
         .Q(temp_shift[0]));
   FDCE \temp_shift_reg[10] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[10]),
         .Q(temp_shift[10]));
   FDCE \temp_shift_reg[11] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[11]),
         .Q(temp_shift[11]));
   FDCE \temp_shift_reg[12] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[12]),
         .Q(temp_shift[12]));
   FDCE \temp_shift_reg[13] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[13]),
         .Q(temp_shift[13]));
   FDCE \temp_shift_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[1]),
         .Q(temp_shift[1]));
   FDCE \temp_shift_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[2]),
         .Q(temp_shift[2]));
   FDCE \temp_shift_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[3]),
         .Q(temp_shift[3]));
   FDCE \temp_shift_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[4]),
         .Q(temp_shift[4]));
   FDCE \temp_shift_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[5]),
         .Q(temp_shift[5]));
   FDCE \temp_shift_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[6]),
         .Q(temp_shift[6]));
   FDCE \temp_shift_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[7]),
         .Q(temp_shift[7]));
   FDCE \temp_shift_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[8]),
         .Q(temp_shift[8]));
   FDCE \temp_shift_reg[9] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(\temp_out_reg[0]_2 ),
         .D(temp[9]),
         .Q(temp_shift[9]));
 endmodule
 
 (* ORIG_REF_NAME = "SCORE_CALC" *) 
 module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
-   (status,
+   (rst_0,
+    status,
+    rst,
     D,
     clk,
-    rst,
     \P_HR_NS_reg[8]_0 ,
     \P_TEMP_NS_reg[8]_0 ,
     \P_EDA_S_reg[8]_0 ,
     \P_HR_S_reg[8]_0 ,
     \P_TEMP_S_reg[8]_0 );
+  output rst_0;
   output [1:0]status;
+  input rst;
   input [8:0]D;
   input clk;
-  input rst;
   input [8:0]\P_HR_NS_reg[8]_0 ;
   input [8:0]\P_TEMP_NS_reg[8]_0 ;
   input [8:0]\P_EDA_S_reg[8]_0 ;
@@ -1680,6 +1682,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   wire \not_stress_score_reg[7]_i_1_n_3 ;
   wire [10:0]p_0_in;
   wire rst;
+  wire rst_0;
   wire [1:0]status;
   wire status0_carry_i_1_n_0;
   wire status0_carry_i_2_n_0;
@@ -1771,325 +1774,325 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \P_EDA_NS_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[0]),
         .Q(P_EDA_NS[0]));
   FDCE \P_EDA_NS_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[1]),
         .Q(P_EDA_NS[1]));
   FDCE \P_EDA_NS_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[2]),
         .Q(P_EDA_NS[2]));
   FDCE \P_EDA_NS_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[3]),
         .Q(P_EDA_NS[3]));
   FDCE \P_EDA_NS_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[4]),
         .Q(P_EDA_NS[4]));
   FDCE \P_EDA_NS_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[5]),
         .Q(P_EDA_NS[5]));
   FDCE \P_EDA_NS_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[6]),
         .Q(P_EDA_NS[6]));
   FDCE \P_EDA_NS_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[7]),
         .Q(P_EDA_NS[7]));
   FDCE \P_EDA_NS_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(D[8]),
         .Q(P_EDA_NS[8]));
   FDCE \P_EDA_S_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [0]),
         .Q(P_EDA_S[0]));
   FDCE \P_EDA_S_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [1]),
         .Q(P_EDA_S[1]));
   FDCE \P_EDA_S_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [2]),
         .Q(P_EDA_S[2]));
   FDCE \P_EDA_S_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [3]),
         .Q(P_EDA_S[3]));
   FDCE \P_EDA_S_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [4]),
         .Q(P_EDA_S[4]));
   FDCE \P_EDA_S_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [5]),
         .Q(P_EDA_S[5]));
   FDCE \P_EDA_S_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [6]),
         .Q(P_EDA_S[6]));
   FDCE \P_EDA_S_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [7]),
         .Q(P_EDA_S[7]));
   FDCE \P_EDA_S_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_EDA_S_reg[8]_0 [8]),
         .Q(P_EDA_S[8]));
   FDCE \P_HR_NS_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [0]),
         .Q(P_HR_NS[0]));
   FDCE \P_HR_NS_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [1]),
         .Q(P_HR_NS[1]));
   FDCE \P_HR_NS_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [2]),
         .Q(P_HR_NS[2]));
   FDCE \P_HR_NS_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [3]),
         .Q(P_HR_NS[3]));
   FDCE \P_HR_NS_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [4]),
         .Q(P_HR_NS[4]));
   FDCE \P_HR_NS_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [5]),
         .Q(P_HR_NS[5]));
   FDCE \P_HR_NS_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [6]),
         .Q(P_HR_NS[6]));
   FDCE \P_HR_NS_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [7]),
         .Q(P_HR_NS[7]));
   FDCE \P_HR_NS_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_NS_reg[8]_0 [8]),
         .Q(P_HR_NS[8]));
   FDCE \P_HR_S_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [0]),
         .Q(P_HR_S[0]));
   FDCE \P_HR_S_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [1]),
         .Q(P_HR_S[1]));
   FDCE \P_HR_S_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [2]),
         .Q(P_HR_S[2]));
   FDCE \P_HR_S_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [3]),
         .Q(P_HR_S[3]));
   FDCE \P_HR_S_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [4]),
         .Q(P_HR_S[4]));
   FDCE \P_HR_S_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [5]),
         .Q(P_HR_S[5]));
   FDCE \P_HR_S_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [6]),
         .Q(P_HR_S[6]));
   FDCE \P_HR_S_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [7]),
         .Q(P_HR_S[7]));
   FDCE \P_HR_S_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_HR_S_reg[8]_0 [8]),
         .Q(P_HR_S[8]));
   FDCE \P_TEMP_NS_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [0]),
         .Q(P_TEMP_NS[0]));
   FDCE \P_TEMP_NS_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [1]),
         .Q(P_TEMP_NS[1]));
   FDCE \P_TEMP_NS_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [2]),
         .Q(P_TEMP_NS[2]));
   FDCE \P_TEMP_NS_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [3]),
         .Q(P_TEMP_NS[3]));
   FDCE \P_TEMP_NS_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [4]),
         .Q(P_TEMP_NS[4]));
   FDCE \P_TEMP_NS_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [5]),
         .Q(P_TEMP_NS[5]));
   FDCE \P_TEMP_NS_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [6]),
         .Q(P_TEMP_NS[6]));
   FDCE \P_TEMP_NS_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [7]),
         .Q(P_TEMP_NS[7]));
   FDCE \P_TEMP_NS_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_NS_reg[8]_0 [8]),
         .Q(P_TEMP_NS[8]));
   FDCE \P_TEMP_S_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [0]),
         .Q(P_TEMP_S[0]));
   FDCE \P_TEMP_S_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [1]),
         .Q(P_TEMP_S[1]));
   FDCE \P_TEMP_S_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [2]),
         .Q(P_TEMP_S[2]));
   FDCE \P_TEMP_S_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [3]),
         .Q(P_TEMP_S[3]));
   FDCE \P_TEMP_S_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [4]),
         .Q(P_TEMP_S[4]));
   FDCE \P_TEMP_S_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [5]),
         .Q(P_TEMP_S[5]));
   FDCE \P_TEMP_S_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [6]),
         .Q(P_TEMP_S[6]));
   FDCE \P_TEMP_S_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [7]),
         .Q(P_TEMP_S[7]));
   FDCE \P_TEMP_S_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\P_TEMP_S_reg[8]_0 [8]),
         .Q(P_TEMP_S[8]));
   LUT2 #(
@@ -2385,13 +2388,13 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \not_stress_score_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[0]),
         .Q(not_stress_score[0]));
   FDCE \not_stress_score_reg[10] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[10]),
         .Q(not_stress_score[10]));
   CARRY4 \not_stress_score_reg[10]_i_1 
@@ -2404,19 +2407,19 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \not_stress_score_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[1]),
         .Q(not_stress_score[1]));
   FDCE \not_stress_score_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[2]),
         .Q(not_stress_score[2]));
   FDCE \not_stress_score_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[3]),
         .Q(not_stress_score[3]));
   CARRY4 \not_stress_score_reg[3]_i_1 
@@ -2429,25 +2432,25 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \not_stress_score_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[4]),
         .Q(not_stress_score[4]));
   FDCE \not_stress_score_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[5]),
         .Q(not_stress_score[5]));
   FDCE \not_stress_score_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[6]),
         .Q(not_stress_score[6]));
   FDCE \not_stress_score_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[7]),
         .Q(not_stress_score[7]));
   CARRY4 \not_stress_score_reg[7]_i_1 
@@ -2460,13 +2463,13 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \not_stress_score_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[8]),
         .Q(not_stress_score[8]));
   FDCE \not_stress_score_reg[9] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(p_0_in[9]),
         .Q(not_stress_score[9]));
   CARRY4 status0_carry
@@ -2653,16 +2656,21 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
        (.I0(status1_carry__0_n_2),
         .I1(\status1_inferred__0/i__carry__0_n_2 ),
         .O(\status[1]_i_1_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \status[1]_i_2 
+       (.I0(rst),
+        .O(rst_0));
   FDCE \status_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\status[0]_i_1_n_0 ),
         .Q(status[0]));
   FDCE \status_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\status[1]_i_1_n_0 ),
         .Q(status[1]));
   LUT6 #(
@@ -2838,13 +2846,13 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \stress_score_reg[0] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[3]_i_1_n_7 ),
         .Q(stress_score[0]));
   FDCE \stress_score_reg[10] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[10]_i_1_n_1 ),
         .Q(stress_score[10]));
   CARRY4 \stress_score_reg[10]_i_1 
@@ -2857,19 +2865,19 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \stress_score_reg[1] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[3]_i_1_n_6 ),
         .Q(stress_score[1]));
   FDCE \stress_score_reg[2] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[3]_i_1_n_5 ),
         .Q(stress_score[2]));
   FDCE \stress_score_reg[3] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[3]_i_1_n_4 ),
         .Q(stress_score[3]));
   CARRY4 \stress_score_reg[3]_i_1 
@@ -2882,25 +2890,25 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \stress_score_reg[4] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[7]_i_1_n_7 ),
         .Q(stress_score[4]));
   FDCE \stress_score_reg[5] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[7]_i_1_n_6 ),
         .Q(stress_score[5]));
   FDCE \stress_score_reg[6] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[7]_i_1_n_5 ),
         .Q(stress_score[6]));
   FDCE \stress_score_reg[7] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[7]_i_1_n_4 ),
         .Q(stress_score[7]));
   CARRY4 \stress_score_reg[7]_i_1 
@@ -2913,13 +2921,13 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
   FDCE \stress_score_reg[8] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[10]_i_1_n_7 ),
         .Q(stress_score[8]));
   FDCE \stress_score_reg[9] 
        (.C(clk),
         .CE(1'b1),
-        .CLR(rst),
+        .CLR(rst_0),
         .D(\stress_score_reg[10]_i_1_n_6 ),
         .Q(stress_score[9]));
 endmodule
@@ -2929,15 +2937,15 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP
    (status,
     temp,
     clk,
-    rst,
     hr,
-    eda);
+    eda,
+    rst);
   output [1:0]status;
   input [13:0]temp;
   input clk;
-  input rst;
   input [13:0]hr;
   input [13:0]eda;
+  input rst;
 
   wire DATA_PREP0_n_0;
   wire DATA_PREP0_n_1;
@@ -2993,6 +3001,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP
   wire DATA_PREP0_n_7;
   wire DATA_PREP0_n_8;
   wire DATA_PREP0_n_9;
+  wire SCORE_CALC0_n_0;
   wire clk;
   wire [13:0]eda;
   wire [13:0]hr;
@@ -3008,10 +3017,10 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP
         .\hr_out_reg[0]_0 ({DATA_PREP0_n_9,DATA_PREP0_n_10,DATA_PREP0_n_11,DATA_PREP0_n_12,DATA_PREP0_n_13,DATA_PREP0_n_14,DATA_PREP0_n_15,DATA_PREP0_n_16,DATA_PREP0_n_17}),
         .\hr_out_reg[0]_1 ({DATA_PREP0_n_36,DATA_PREP0_n_37,DATA_PREP0_n_38,DATA_PREP0_n_39,DATA_PREP0_n_40,DATA_PREP0_n_41,DATA_PREP0_n_42,DATA_PREP0_n_43,DATA_PREP0_n_44}),
         .out({DATA_PREP0_n_0,DATA_PREP0_n_1,DATA_PREP0_n_2,DATA_PREP0_n_3,DATA_PREP0_n_4,DATA_PREP0_n_5,DATA_PREP0_n_6,DATA_PREP0_n_7,DATA_PREP0_n_8}),
-        .rst(rst),
         .temp(temp),
         .\temp_out_reg[0]_0 ({DATA_PREP0_n_18,DATA_PREP0_n_19,DATA_PREP0_n_20,DATA_PREP0_n_21,DATA_PREP0_n_22,DATA_PREP0_n_23,DATA_PREP0_n_24,DATA_PREP0_n_25,DATA_PREP0_n_26}),
-        .\temp_out_reg[0]_1 ({DATA_PREP0_n_45,DATA_PREP0_n_46,DATA_PREP0_n_47,DATA_PREP0_n_48,DATA_PREP0_n_49,DATA_PREP0_n_50,DATA_PREP0_n_51,DATA_PREP0_n_52,DATA_PREP0_n_53}));
+        .\temp_out_reg[0]_1 ({DATA_PREP0_n_45,DATA_PREP0_n_46,DATA_PREP0_n_47,DATA_PREP0_n_48,DATA_PREP0_n_49,DATA_PREP0_n_50,DATA_PREP0_n_51,DATA_PREP0_n_52,DATA_PREP0_n_53}),
+        .\temp_out_reg[0]_2 (SCORE_CALC0_n_0));
   Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC SCORE_CALC0
        (.D({DATA_PREP0_n_0,DATA_PREP0_n_1,DATA_PREP0_n_2,DATA_PREP0_n_3,DATA_PREP0_n_4,DATA_PREP0_n_5,DATA_PREP0_n_6,DATA_PREP0_n_7,DATA_PREP0_n_8}),
         .\P_EDA_S_reg[8]_0 ({DATA_PREP0_n_27,DATA_PREP0_n_28,DATA_PREP0_n_29,DATA_PREP0_n_30,DATA_PREP0_n_31,DATA_PREP0_n_32,DATA_PREP0_n_33,DATA_PREP0_n_34,DATA_PREP0_n_35}),
@@ -3021,6 +3030,7 @@ module Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP
         .\P_TEMP_S_reg[8]_0 ({DATA_PREP0_n_45,DATA_PREP0_n_46,DATA_PREP0_n_47,DATA_PREP0_n_48,DATA_PREP0_n_49,DATA_PREP0_n_50,DATA_PREP0_n_51,DATA_PREP0_n_52,DATA_PREP0_n_53}),
         .clk(clk),
         .rst(rst),
+        .rst_0(SCORE_CALC0_n_0),
         .status(status));
 endmodule
 `ifndef GLBL

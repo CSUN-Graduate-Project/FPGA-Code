@@ -20,3 +20,20 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform generate
+platform active {Sensors_ML_wrapper}
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper.xsa}
+platform generate -domains 
+platform generate
+platform active {Sensors_ML_wrapper}
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper.xsa}
+platform generate -domains 
+platform active {Sensors_ML_wrapper}
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML_wrapper.xsa}
+platform generate -domains 

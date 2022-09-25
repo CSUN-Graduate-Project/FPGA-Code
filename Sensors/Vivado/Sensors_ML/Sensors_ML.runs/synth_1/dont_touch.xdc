@@ -18,9 +18,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_
 # IP: bd/Sensors_ML/ip/Sensors_ML_xbar_0/Sensors_ML_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_xbar_0 || ORIG_REF_NAME==Sensors_ML_xbar_0} -quiet] -quiet
 
-# IP: bd/Sensors_ML/ip/Sensors_ML_auto_pc_0/Sensors_ML_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_auto_pc_0 || ORIG_REF_NAME==Sensors_ML_auto_pc_0} -quiet] -quiet
-
 # IP: bd/Sensors_ML/ip/Sensors_ML_ps7_0_axi_periph_0/Sensors_ML_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_ps7_0_axi_periph_0 || ORIG_REF_NAME==Sensors_ML_ps7_0_axi_periph_0} -quiet] -quiet
 
@@ -38,5 +35,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_
 
 # IP: bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_axi_gpio_1_0 || ORIG_REF_NAME==Sensors_ML_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/Sensors_ML/ip/Sensors_ML_auto_pc_0/Sensors_ML_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Sensors_ML_auto_pc_0 || ORIG_REF_NAME==Sensors_ML_auto_pc_0} -quiet] -quiet
 
 # XDC: c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/Sensors_ML_ooc.xdc

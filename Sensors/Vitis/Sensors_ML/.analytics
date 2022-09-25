@@ -84,3 +84,70 @@ timestamp=[2022-09-17 14:23:30], mode=BUILD, duration=0:00:01.545, duration_ms=1
 timestamp=[2022-09-17 14:23:41], mode=BUILD, duration=0:00:09.652, duration_ms=9652, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
 timestamp=[2022-09-17 14:23:46], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
 timestamp=[2022-09-17 14:23:54], mode=BUILD, duration=0:00:07.575, duration_ms=7575, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-18 13:20:47], mode=WORKBENCH_START, duration=0:00:10.828, duration_ms=10828, data={}
+timestamp=[2022-09-18 13:20:47], mode=WORKBENCH_UI_INIT, duration=0:00:00.638, duration_ms=638, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-18 13:21:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.316, duration_ms=316, data={}
+timestamp=[2022-09-18 13:23:34], mode=BUILD, duration=0:00:00.543, duration_ms=543, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-18 13:23:44], mode=BUILD, duration=0:00:08.704, duration_ms=8704, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-18 13:35:50], mode=BUILD, duration=0:00:00.328, duration_ms=328, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-18 13:35:56], mode=BUILD, duration=0:00:06.036, duration_ms=6036, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-18 13:37:03], mode=WORKBENCH_START, duration=0:00:07.020, duration_ms=7020, data={}
+timestamp=[2022-09-18 13:37:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.592, duration_ms=592, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-18 13:37:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.068, duration_ms=68, data={}
+timestamp=[2022-09-19 16:54:41], mode=WORKBENCH_START, duration=0:00:09.625, duration_ms=9625, data={}
+timestamp=[2022-09-19 16:54:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.478, duration_ms=478, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-19 16:54:43], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.110, duration_ms=110, data={}
+timestamp=[2022-09-19 17:00:54], mode=PLATFORM_GENERATION, duration=0:00:28.801, duration_ms=28801, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-19 17:01:51], mode=PLATFORM_GENERATION, duration=0:00:02.544, duration_ms=2544, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-19 17:01:55], mode=BUILD, duration=0:00:01.570, duration_ms=1570, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-19 17:02:09], mode=BUILD, duration=0:00:06.127, duration_ms=6127, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-19 17:07:50], mode=BUILD, duration=0:00:00.367, duration_ms=367, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-19 17:08:02], mode=BUILD, duration=0:00:11.441, duration_ms=11441, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-21 18:45:35], mode=WORKBENCH_START, duration=0:00:15.489, duration_ms=15489, data={}
+timestamp=[2022-09-21 18:45:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.920, duration_ms=920, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-21 18:45:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.146, duration_ms=146, data={}
+timestamp=[2022-09-24 23:13:28], mode=WORKBENCH_START, duration=0:00:07.734, duration_ms=7734, data={}
+timestamp=[2022-09-24 23:13:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.588, duration_ms=588, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-24 23:13:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.119, duration_ms=119, data={}
+timestamp=[2022-09-24 23:25:15], mode=PLATFORM_GENERATION, duration=0:00:27.632, duration_ms=27632, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-24 23:25:16], mode=BUILD, duration=0:00:01.260, duration_ms=1260, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-24 23:25:23], mode=BUILD, duration=0:00:06.230, duration_ms=6230, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-24 23:25:31], mode=BUILD, duration=0:00:00.291, duration_ms=291, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-24 23:25:38], mode=BUILD, duration=0:00:06.028, duration_ms=6028, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:06:00], mode=WORKBENCH_START, duration=0:00:09.175, duration_ms=9175, data={}
+timestamp=[2022-09-25 14:06:01], mode=WORKBENCH_UI_INIT, duration=0:00:00.547, duration_ms=547, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-25 14:06:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.214, duration_ms=214, data={}
+timestamp=[2022-09-25 14:16:38], mode=BUILD, duration=0:00:00.493, duration_ms=493, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:16:46], mode=BUILD, duration=0:00:07.279, duration_ms=7279, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:27:57], mode=PLATFORM_GENERATION, duration=0:00:03.356, duration_ms=3356, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-25 14:28:18], mode=BUILD, duration=0:00:02.973, duration_ms=2973, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:28:33], mode=BUILD, duration=0:00:05.890, duration_ms=5890, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:28:49], mode=BUILD, duration=0:00:00.312, duration_ms=312, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:28:55], mode=BUILD, duration=0:00:06.031, duration_ms=6031, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:35:12], mode=BUILD, duration=0:00:00.882, duration_ms=882, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:35:19], mode=BUILD, duration=0:00:06.267, duration_ms=6267, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:35:31], mode=BUILD, duration=0:00:00.255, duration_ms=255, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:35:38], mode=BUILD, duration=0:00:06.454, duration_ms=6454, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:37:38], mode=BUILD, duration=0:00:00.949, duration_ms=949, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:37:45], mode=BUILD, duration=0:00:07.040, duration_ms=7040, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:39:17], mode=PLATFORM_GENERATION, duration=0:00:02.911, duration_ms=2911, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-25 14:39:21], mode=BUILD, duration=0:00:00.310, duration_ms=310, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:39:36], mode=BUILD, duration=0:00:05.887, duration_ms=5887, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:39:46], mode=BUILD, duration=0:00:00.250, duration_ms=250, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:39:53], mode=BUILD, duration=0:00:06.019, duration_ms=6019, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:53:01], mode=PLATFORM_GENERATION, duration=0:00:02.945, duration_ms=2945, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-25 14:53:05], mode=BUILD, duration=0:00:00.312, duration_ms=312, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:53:20], mode=BUILD, duration=0:00:06.027, duration_ms=6027, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:55:20], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:55:27], mode=BUILD, duration=0:00:06.210, duration_ms=6210, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:56:39], mode=WORKBENCH_START, duration=0:00:06.799, duration_ms=6799, data={}
+timestamp=[2022-09-25 14:56:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.605, duration_ms=605, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Sensors_ML_wrapper,application_project_sensors_ml,application_project_sensors_ml_system}
+timestamp=[2022-09-25 14:57:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.114, duration_ms=114, data={}
+timestamp=[2022-09-25 14:57:18], mode=BUILD, duration=0:00:00.343, duration_ms=343, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 14:57:25], mode=BUILD, duration=0:00:05.984, duration_ms=5984, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 15:08:15], mode=PLATFORM_GENERATION, duration=0:00:03.129, duration_ms=3129, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-25 15:08:18], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 15:08:34], mode=BUILD, duration=0:00:06.759, duration_ms=6759, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 15:25:12], mode=PLATFORM_GENERATION, duration=0:00:04.060, duration_ms=4060, data={name=Sensors_ML_wrapper}
+timestamp=[2022-09-25 15:25:17], mode=BUILD, duration=0:00:00.328, duration_ms=328, data={name=application_project_sensors_ml, configuration=Debug, clean_build=false}
+timestamp=[2022-09-25 15:25:35], mode=BUILD, duration=0:00:07.883, duration_ms=7883, data={name=application_project_sensors_ml_system, configuration=Debug, clean_build=false}

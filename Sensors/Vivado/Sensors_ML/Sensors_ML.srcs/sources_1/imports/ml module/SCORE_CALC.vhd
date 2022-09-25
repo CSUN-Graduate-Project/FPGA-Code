@@ -61,7 +61,8 @@ begin
 	-- should expect status = 11 when in training mode
 	process(clk,rst) -- output block
 	begin
-		if (rst = '1') then
+	--PS rst is always active high
+		if (rst = '0') then
 			status <= "00";
 		elsif (rising_edge(clk)) then
 			if stress_score > not_stress_score then
@@ -73,14 +74,13 @@ begin
 			else
 				status <= "00";
 			end if;
-
 		end if;	
 	end process;	
 	
 
 	process(clk, rst) -- stress score
 	begin
-		if (rst = '1') then
+		if (rst = '0') then
 			
 		P_TEMP_S <= (others => '0');	
 		P_EDA_S <= (others => '0');	
@@ -177,7 +177,7 @@ begin
 	
 	process(clk, rst) -- not stressed
 	begin
-	if (rst = '1') then
+	if (rst = '0') then
 		-- reset logic
         
 

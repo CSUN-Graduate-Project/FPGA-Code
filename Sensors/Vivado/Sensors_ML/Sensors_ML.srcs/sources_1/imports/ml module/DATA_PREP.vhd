@@ -36,7 +36,8 @@ begin
 
 process(clk,rst)
 begin
-if(rst ='1') then
+--PS rst is always active high
+if(rst ='0') then
 	temp_shift <= (others => '0');
 	eda_shift <= (others => '0');
 	hr_shift <= (others => '0');
@@ -52,7 +53,7 @@ end process;
 
 process(clk,rst)
 begin 
-if (rst ='1') then
+if (rst ='0') then
 
 	temp_out <= (others => '0');
 	eda_out <= (others => '0');

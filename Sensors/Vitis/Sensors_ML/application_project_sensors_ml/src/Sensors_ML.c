@@ -154,7 +154,7 @@ int main()
 
 					//neglect bad BPM
 					if (BPM > 40 && BPM < 160) {
-						printf("rising edge[%d]= %.04lf \n", i, tmp[i]-tmp[i-1]);
+						printf("rising edge[%d]= %.04lf seconds \n", i, tmp[i]-tmp[i-1]);
 						printf("BPM = %.04lf \n", i, BPM);
 
 						//GSR Reading, channel 1 = Pin V2
@@ -170,6 +170,7 @@ int main()
 						channel = (ADC & AD2_CHANNEL_MASK) >> AD2_CHANNEL_BIT;
 
 						for(range=0; range <= 8; range++){
+							//debug this for GSR
 							if(voltage < vout[range] && voltage > vout[range+1]){
 							resistance = rs[range] + (fabs(vout[range] - voltage)/0.0032)*(10000.0*inc_rs[range]);
 							skin_cond = (1/resistance);
@@ -177,6 +178,9 @@ int main()
 							//printf("skin resistance = %.04lf Ohms \r\n", resistance);
 							printf("skin conductance = %.04f microSiemens \n", skin_cond);
 							}
+							//else
+								//skin_cond = 1*10e6;
+								//printf("skin conductance = %.04f microSiemens \n", skin_cond);
 						}
 
 						temp_cel  = TMP3_getTemp(&myDevice2);

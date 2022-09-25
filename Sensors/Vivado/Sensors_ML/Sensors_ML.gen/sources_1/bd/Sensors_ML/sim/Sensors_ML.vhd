@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Fri Sep 16 19:51:24 2022
+--Date        : Sun Sep 25 15:13:54 2022
 --Host        : DESKTOP-AJV8A0J running 64-bit major release  (build 9200)
 --Command     : generate_target Sensors_ML.bd
 --Design      : Sensors_ML
@@ -1605,7 +1605,7 @@ entity Sensors_ML is
     Pmod_out_1_pin9_t : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Sensors_ML : entity is "Sensors_ML,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Sensors_ML,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=10,numNonXlnxBlks=2,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of Sensors_ML : entity is "Sensors_ML,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Sensors_ML,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=10,numNonXlnxBlks=2,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=2,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Sensors_ML : entity is "Sensors_ML.hwdef";
 end Sensors_ML;
@@ -1798,16 +1798,6 @@ architecture STRUCTURE of Sensors_ML is
     dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component Sensors_ML_xlconcat_0_0;
-  component Sensors_ML_SCORE_CALC_TOP_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    temp : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    eda : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    hr : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    status : out STD_LOGIC_VECTOR ( 1 downto 0 )
-  );
-  end component Sensors_ML_SCORE_CALC_TOP_0_0;
   component Sensors_ML_axi_gpio_0_0 is
   port (
     s_axi_aclk : in STD_LOGIC;
@@ -1858,6 +1848,16 @@ architecture STRUCTURE of Sensors_ML is
     gpio2_io_i : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component Sensors_ML_axi_gpio_1_0;
+  component Sensors_ML_SCORE_CALC_TOP_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    temp : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    eda : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    hr : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    status : out STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+  end component Sensors_ML_SCORE_CALC_TOP_0_0;
   signal PmodAD2_0_I2C_Interrupt : STD_LOGIC;
   signal PmodAD2_0_Pmod_out_PIN10_I : STD_LOGIC;
   signal PmodAD2_0_Pmod_out_PIN10_O : STD_LOGIC;

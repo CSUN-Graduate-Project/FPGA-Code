@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1663449321">
-  <File Type="OPT-HWDEF" Name="Sensors_ML_wrapper.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Sensors_ML_wrapper_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="Sensors_ML_wrapper.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1664144044">
   <File Type="ROUTE-PWR" Name="Sensors_ML_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Sensors_ML_wrapper.tcl"/>
   <File Type="BITSTR-MMI" Name="Sensors_ML_wrapper.mmi"/>
@@ -13,6 +10,7 @@
   <File Type="OPT-TIMING" Name="Sensors_ML_wrapper_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="Sensors_ML_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="Sensors_ML_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Sensors_ML_wrapper.hwdef"/>
   <File Type="PWROPT-DCP" Name="Sensors_ML_wrapper_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="Sensors_ML_wrapper_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="Sensors_ML_wrapper_timing_summary_pwropted.rpt"/>
@@ -50,6 +48,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="Sensors_ML_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Sensors_ML_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Sensors_ML_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Sensors_ML_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Sensors_ML_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Sensors_ML_wrapper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Sensors_ML_wrapper_postroute_physopt.dcp"/>
@@ -162,4 +161,12 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_PmodTMP3_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_PmodAD2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_SCORE_CALC_TOP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Sensors_ML_axi_gpio_1_0"/>
 </GenRun>

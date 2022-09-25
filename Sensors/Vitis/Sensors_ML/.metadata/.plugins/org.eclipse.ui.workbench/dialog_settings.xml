@@ -4,6 +4,14 @@
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+			<item value="org.eclipse.egit.ui.wizardCategory"/>
+			<item value="org.eclipse.launchbar.ui.targetWizards"/>
+			<item value="org.eclipse.rse.ui.newWizards.rseCategory"/>
+			<item value="org.eclipse.linuxtools.tmf.ui.wizards.new"/>
+			<item value="com.xilinx.sdk.ui.category.newWizards"/>
+			<item value="org.eclipse.wst.XMLCategory"/>
+			<item value="org.eclipse.ui.Examples"/>
 		</list>
 	</section>
 </section>

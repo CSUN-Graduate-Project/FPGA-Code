@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Fri Sep 16 19:52:49 2022
+-- Date        : Sun Sep 25 15:16:39 2022
 -- Host        : DESKTOP-AJV8A0J running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_Machine_Learning/Sensors_Machine_Learning.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_sim_netlist.vhdl
+--               c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_sim_netlist.vhdl
 -- Design      : Sensors_ML_SCORE_CALC_TOP_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -24,7 +24,7 @@ entity Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP is
     \temp_out_reg[0]_1\ : out STD_LOGIC_VECTOR ( 8 downto 0 );
     temp : in STD_LOGIC_VECTOR ( 13 downto 0 );
     clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
+    \temp_out_reg[0]_2\ : in STD_LOGIC;
     hr : in STD_LOGIC_VECTOR ( 13 downto 0 );
     eda : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
@@ -335,7 +335,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \eda_out[0]_i_1_n_0\,
       Q => eda_out(0)
     );
@@ -343,7 +343,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \eda_out[1]_i_1_n_0\,
       Q => eda_out(1)
     );
@@ -351,7 +351,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \eda_out[2]_i_1_n_0\,
       Q => eda_out(2)
     );
@@ -359,7 +359,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \eda_out[3]_i_1_n_0\,
       Q => eda_out(3)
     );
@@ -367,7 +367,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \eda_out[4]_i_1_n_0\,
       Q => eda_out(4)
     );
@@ -375,7 +375,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(0),
       Q => eda_shift(0)
     );
@@ -383,7 +383,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(10),
       Q => eda_shift(10)
     );
@@ -391,7 +391,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(11),
       Q => eda_shift(11)
     );
@@ -399,7 +399,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(12),
       Q => eda_shift(12)
     );
@@ -407,7 +407,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(13),
       Q => eda_shift(13)
     );
@@ -415,7 +415,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(1),
       Q => eda_shift(1)
     );
@@ -423,7 +423,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(2),
       Q => eda_shift(2)
     );
@@ -431,7 +431,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(3),
       Q => eda_shift(3)
     );
@@ -439,7 +439,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(4),
       Q => eda_shift(4)
     );
@@ -447,7 +447,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(5),
       Q => eda_shift(5)
     );
@@ -455,7 +455,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(6),
       Q => eda_shift(6)
     );
@@ -463,7 +463,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(7),
       Q => eda_shift(7)
     );
@@ -471,7 +471,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(8),
       Q => eda_shift(8)
     );
@@ -479,7 +479,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => eda(9),
       Q => eda_shift(9)
     );
@@ -1521,7 +1521,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => hr_out0,
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \hr_out[0]_i_1_n_0\,
       Q => hr_out(0)
     );
@@ -1543,7 +1543,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => hr_out0,
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \hr_out[1]_i_1_n_0\,
       Q => hr_out(1)
     );
@@ -1551,7 +1551,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => hr_out0,
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \hr_out_reg[2]_i_1_n_0\,
       Q => hr_out(2)
     );
@@ -1566,7 +1566,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => hr_out0,
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \hr_out_reg[3]_i_1_n_0\,
       Q => hr_out(3)
     );
@@ -1581,7 +1581,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => hr_out0,
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \hr_out[4]_i_2_n_0\,
       Q => hr_out(4)
     );
@@ -1589,7 +1589,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(0),
       Q => hr_shift(0)
     );
@@ -1597,7 +1597,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(10),
       Q => hr_shift(10)
     );
@@ -1605,7 +1605,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(11),
       Q => hr_shift(11)
     );
@@ -1613,7 +1613,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(12),
       Q => hr_shift(12)
     );
@@ -1621,7 +1621,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(13),
       Q => hr_shift(13)
     );
@@ -1629,7 +1629,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(1),
       Q => hr_shift(1)
     );
@@ -1637,7 +1637,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(2),
       Q => hr_shift(2)
     );
@@ -1645,7 +1645,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(3),
       Q => hr_shift(3)
     );
@@ -1653,7 +1653,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(4),
       Q => hr_shift(4)
     );
@@ -1661,7 +1661,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(5),
       Q => hr_shift(5)
     );
@@ -1669,7 +1669,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(6),
       Q => hr_shift(6)
     );
@@ -1677,7 +1677,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(7),
       Q => hr_shift(7)
     );
@@ -1685,7 +1685,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(8),
       Q => hr_shift(8)
     );
@@ -1693,7 +1693,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => hr(9),
       Q => hr_shift(9)
     );
@@ -1860,7 +1860,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \temp_out[0]_i_1_n_0\,
       Q => temp_out(0)
     );
@@ -1868,7 +1868,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \temp_out[1]_i_1_n_0\,
       Q => temp_out(1)
     );
@@ -1876,7 +1876,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \temp_out[2]_i_1_n_0\,
       Q => temp_out(2)
     );
@@ -1884,7 +1884,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \temp_out[3]_i_1_n_0\,
       Q => temp_out(3)
     );
@@ -1892,7 +1892,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => \temp_out[4]_i_1_n_0\,
       Q => temp_out(4)
     );
@@ -1900,7 +1900,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(0),
       Q => temp_shift(0)
     );
@@ -1908,7 +1908,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(10),
       Q => temp_shift(10)
     );
@@ -1916,7 +1916,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(11),
       Q => temp_shift(11)
     );
@@ -1924,7 +1924,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(12),
       Q => temp_shift(12)
     );
@@ -1932,7 +1932,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(13),
       Q => temp_shift(13)
     );
@@ -1940,7 +1940,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(1),
       Q => temp_shift(1)
     );
@@ -1948,7 +1948,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(2),
       Q => temp_shift(2)
     );
@@ -1956,7 +1956,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(3),
       Q => temp_shift(3)
     );
@@ -1964,7 +1964,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(4),
       Q => temp_shift(4)
     );
@@ -1972,7 +1972,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(5),
       Q => temp_shift(5)
     );
@@ -1980,7 +1980,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(6),
       Q => temp_shift(6)
     );
@@ -1988,7 +1988,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(7),
       Q => temp_shift(7)
     );
@@ -1996,7 +1996,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(8),
       Q => temp_shift(8)
     );
@@ -2004,7 +2004,7 @@ g0_b8: unisim.vcomponents.LUT5
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \temp_out_reg[0]_2\,
       D => temp(9),
       Q => temp_shift(9)
     );
@@ -2015,10 +2015,11 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC is
   port (
+    rst_0 : out STD_LOGIC;
     status : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    rst : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 8 downto 0 );
     clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
     \P_HR_NS_reg[8]_0\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
     \P_TEMP_NS_reg[8]_0\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
     \P_EDA_S_reg[8]_0\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
@@ -2082,6 +2083,7 @@ architecture STRUCTURE of Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC is
   signal \not_stress_score_reg[7]_i_1_n_2\ : STD_LOGIC;
   signal \not_stress_score_reg[7]_i_1_n_3\ : STD_LOGIC;
   signal p_0_in : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal \^rst_0\ : STD_LOGIC;
   signal status0_carry_i_1_n_0 : STD_LOGIC;
   signal status0_carry_i_2_n_0 : STD_LOGIC;
   signal status0_carry_i_3_n_0 : STD_LOGIC;
@@ -2192,11 +2194,12 @@ architecture STRUCTURE of Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC is
   attribute HLUTNM of \stress_score[7]_i_5\ : label is "lutpair3";
   attribute HLUTNM of \stress_score[7]_i_9\ : label is "lutpair4";
 begin
+  rst_0 <= \^rst_0\;
 \P_EDA_NS_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(0),
       Q => P_EDA_NS(0)
     );
@@ -2204,7 +2207,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(1),
       Q => P_EDA_NS(1)
     );
@@ -2212,7 +2215,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(2),
       Q => P_EDA_NS(2)
     );
@@ -2220,7 +2223,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(3),
       Q => P_EDA_NS(3)
     );
@@ -2228,7 +2231,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(4),
       Q => P_EDA_NS(4)
     );
@@ -2236,7 +2239,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(5),
       Q => P_EDA_NS(5)
     );
@@ -2244,7 +2247,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(6),
       Q => P_EDA_NS(6)
     );
@@ -2252,7 +2255,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(7),
       Q => P_EDA_NS(7)
     );
@@ -2260,7 +2263,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => D(8),
       Q => P_EDA_NS(8)
     );
@@ -2268,7 +2271,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(0),
       Q => P_EDA_S(0)
     );
@@ -2276,7 +2279,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(1),
       Q => P_EDA_S(1)
     );
@@ -2284,7 +2287,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(2),
       Q => P_EDA_S(2)
     );
@@ -2292,7 +2295,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(3),
       Q => P_EDA_S(3)
     );
@@ -2300,7 +2303,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(4),
       Q => P_EDA_S(4)
     );
@@ -2308,7 +2311,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(5),
       Q => P_EDA_S(5)
     );
@@ -2316,7 +2319,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(6),
       Q => P_EDA_S(6)
     );
@@ -2324,7 +2327,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(7),
       Q => P_EDA_S(7)
     );
@@ -2332,7 +2335,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_EDA_S_reg[8]_0\(8),
       Q => P_EDA_S(8)
     );
@@ -2340,7 +2343,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(0),
       Q => P_HR_NS(0)
     );
@@ -2348,7 +2351,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(1),
       Q => P_HR_NS(1)
     );
@@ -2356,7 +2359,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(2),
       Q => P_HR_NS(2)
     );
@@ -2364,7 +2367,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(3),
       Q => P_HR_NS(3)
     );
@@ -2372,7 +2375,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(4),
       Q => P_HR_NS(4)
     );
@@ -2380,7 +2383,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(5),
       Q => P_HR_NS(5)
     );
@@ -2388,7 +2391,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(6),
       Q => P_HR_NS(6)
     );
@@ -2396,7 +2399,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(7),
       Q => P_HR_NS(7)
     );
@@ -2404,7 +2407,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_NS_reg[8]_0\(8),
       Q => P_HR_NS(8)
     );
@@ -2412,7 +2415,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(0),
       Q => P_HR_S(0)
     );
@@ -2420,7 +2423,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(1),
       Q => P_HR_S(1)
     );
@@ -2428,7 +2431,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(2),
       Q => P_HR_S(2)
     );
@@ -2436,7 +2439,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(3),
       Q => P_HR_S(3)
     );
@@ -2444,7 +2447,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(4),
       Q => P_HR_S(4)
     );
@@ -2452,7 +2455,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(5),
       Q => P_HR_S(5)
     );
@@ -2460,7 +2463,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(6),
       Q => P_HR_S(6)
     );
@@ -2468,7 +2471,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(7),
       Q => P_HR_S(7)
     );
@@ -2476,7 +2479,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_HR_S_reg[8]_0\(8),
       Q => P_HR_S(8)
     );
@@ -2484,7 +2487,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(0),
       Q => P_TEMP_NS(0)
     );
@@ -2492,7 +2495,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(1),
       Q => P_TEMP_NS(1)
     );
@@ -2500,7 +2503,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(2),
       Q => P_TEMP_NS(2)
     );
@@ -2508,7 +2511,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(3),
       Q => P_TEMP_NS(3)
     );
@@ -2516,7 +2519,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(4),
       Q => P_TEMP_NS(4)
     );
@@ -2524,7 +2527,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(5),
       Q => P_TEMP_NS(5)
     );
@@ -2532,7 +2535,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(6),
       Q => P_TEMP_NS(6)
     );
@@ -2540,7 +2543,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(7),
       Q => P_TEMP_NS(7)
     );
@@ -2548,7 +2551,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_NS_reg[8]_0\(8),
       Q => P_TEMP_NS(8)
     );
@@ -2556,7 +2559,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(0),
       Q => P_TEMP_S(0)
     );
@@ -2564,7 +2567,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(1),
       Q => P_TEMP_S(1)
     );
@@ -2572,7 +2575,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(2),
       Q => P_TEMP_S(2)
     );
@@ -2580,7 +2583,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(3),
       Q => P_TEMP_S(3)
     );
@@ -2588,7 +2591,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(4),
       Q => P_TEMP_S(4)
     );
@@ -2596,7 +2599,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(5),
       Q => P_TEMP_S(5)
     );
@@ -2604,7 +2607,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(6),
       Q => P_TEMP_S(6)
     );
@@ -2612,7 +2615,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(7),
       Q => P_TEMP_S(7)
     );
@@ -2620,7 +2623,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \P_TEMP_S_reg[8]_0\(8),
       Q => P_TEMP_S(8)
     );
@@ -3019,7 +3022,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(0),
       Q => not_stress_score(0)
     );
@@ -3027,7 +3030,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(10),
       Q => not_stress_score(10)
     );
@@ -3052,7 +3055,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(1),
       Q => not_stress_score(1)
     );
@@ -3060,7 +3063,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(2),
       Q => not_stress_score(2)
     );
@@ -3068,7 +3071,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(3),
       Q => not_stress_score(3)
     );
@@ -3094,7 +3097,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(4),
       Q => not_stress_score(4)
     );
@@ -3102,7 +3105,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(5),
       Q => not_stress_score(5)
     );
@@ -3110,7 +3113,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(6),
       Q => not_stress_score(6)
     );
@@ -3118,7 +3121,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(7),
       Q => not_stress_score(7)
     );
@@ -3144,7 +3147,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(8),
       Q => not_stress_score(8)
     );
@@ -3152,7 +3155,7 @@ begin
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => p_0_in(9),
       Q => not_stress_score(9)
     );
@@ -3434,11 +3437,19 @@ status1_carry_i_8: unisim.vcomponents.LUT4
       I1 => \status1_inferred__0/i__carry__0_n_2\,
       O => \status[1]_i_1_n_0\
     );
+\status[1]_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => rst,
+      O => \^rst_0\
+    );
 \status_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \status[0]_i_1_n_0\,
       Q => status(0)
     );
@@ -3446,7 +3457,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \status[1]_i_1_n_0\,
       Q => status(1)
     );
@@ -3674,7 +3685,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[3]_i_1_n_7\,
       Q => stress_score(0)
     );
@@ -3682,7 +3693,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[10]_i_1_n_1\,
       Q => stress_score(10)
     );
@@ -3708,7 +3719,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[3]_i_1_n_6\,
       Q => stress_score(1)
     );
@@ -3716,7 +3727,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[3]_i_1_n_5\,
       Q => stress_score(2)
     );
@@ -3724,7 +3735,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[3]_i_1_n_4\,
       Q => stress_score(3)
     );
@@ -3753,7 +3764,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[7]_i_1_n_7\,
       Q => stress_score(4)
     );
@@ -3761,7 +3772,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[7]_i_1_n_6\,
       Q => stress_score(5)
     );
@@ -3769,7 +3780,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[7]_i_1_n_5\,
       Q => stress_score(6)
     );
@@ -3777,7 +3788,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[7]_i_1_n_4\,
       Q => stress_score(7)
     );
@@ -3806,7 +3817,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[10]_i_1_n_7\,
       Q => stress_score(8)
     );
@@ -3814,7 +3825,7 @@ status1_carry_i_8: unisim.vcomponents.LUT4
      port map (
       C => clk,
       CE => '1',
-      CLR => rst,
+      CLR => \^rst_0\,
       D => \stress_score_reg[10]_i_1_n_6\,
       Q => stress_score(9)
     );
@@ -3828,9 +3839,9 @@ entity Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP is
     status : out STD_LOGIC_VECTOR ( 1 downto 0 );
     temp : in STD_LOGIC_VECTOR ( 13 downto 0 );
     clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
     hr : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    eda : in STD_LOGIC_VECTOR ( 13 downto 0 )
+    eda : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP : entity is "SCORE_CALC_TOP";
@@ -3891,6 +3902,7 @@ architecture STRUCTURE of Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC_TOP is
   signal DATA_PREP0_n_7 : STD_LOGIC;
   signal DATA_PREP0_n_8 : STD_LOGIC;
   signal DATA_PREP0_n_9 : STD_LOGIC;
+  signal SCORE_CALC0_n_0 : STD_LOGIC;
 begin
 DATA_PREP0: entity work.Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
      port map (
@@ -3933,7 +3945,6 @@ DATA_PREP0: entity work.Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
       \out\(2) => DATA_PREP0_n_6,
       \out\(1) => DATA_PREP0_n_7,
       \out\(0) => DATA_PREP0_n_8,
-      rst => rst,
       temp(13 downto 0) => temp(13 downto 0),
       \temp_out_reg[0]_0\(8) => DATA_PREP0_n_18,
       \temp_out_reg[0]_0\(7) => DATA_PREP0_n_19,
@@ -3952,7 +3963,8 @@ DATA_PREP0: entity work.Sensors_ML_SCORE_CALC_TOP_0_0_DATA_PREP
       \temp_out_reg[0]_1\(3) => DATA_PREP0_n_50,
       \temp_out_reg[0]_1\(2) => DATA_PREP0_n_51,
       \temp_out_reg[0]_1\(1) => DATA_PREP0_n_52,
-      \temp_out_reg[0]_1\(0) => DATA_PREP0_n_53
+      \temp_out_reg[0]_1\(0) => DATA_PREP0_n_53,
+      \temp_out_reg[0]_2\ => SCORE_CALC0_n_0
     );
 SCORE_CALC0: entity work.Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
      port map (
@@ -4012,6 +4024,7 @@ SCORE_CALC0: entity work.Sensors_ML_SCORE_CALC_TOP_0_0_SCORE_CALC
       \P_TEMP_S_reg[8]_0\(0) => DATA_PREP0_n_53,
       clk => clk,
       rst => rst,
+      rst_0 => SCORE_CALC0_n_0,
       status(1 downto 0) => status(1 downto 0)
     );
 end STRUCTURE;

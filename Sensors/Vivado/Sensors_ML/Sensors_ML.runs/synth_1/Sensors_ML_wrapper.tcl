@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -90,7 +91,7 @@ set_property ip_output_repo c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Projec
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd
 add_files C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/sources_1/bd/Sensors_ML/Sensors_ML.bd
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/PmodAD2_pmod_bridge_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodAD2_0_0/src/PmodAD2_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
@@ -106,7 +107,6 @@ set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_PmodTMP3_0_0/src/PmodTMP3_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_processing_system7_0_0/Sensors_ML_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_xbar_0/Sensors_ML_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_auto_pc_0/Sensors_ML_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0_ooc.xdc]
@@ -116,6 +116,7 @@ set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_auto_pc_0/Sensors_ML_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/Sensors_ML_ooc.xdc]
 
 OPTRACE "Adding files" END { }

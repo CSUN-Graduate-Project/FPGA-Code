@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sat Sep 17 14:13:53 2022
-# Process ID: 14144
+# Start of session at: Sun Sep 25 15:18:12 2022
+# Process ID: 2772
 # Current directory: C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1
 # Command line: vivado.exe -log Sensors_ML_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sensors_ML_wrapper.tcl
 # Log file: C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/Sensors_ML_wrapper.vds

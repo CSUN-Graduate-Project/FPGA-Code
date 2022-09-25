@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Sat Sep 17 14:18:17 2022
+| Date             : Sun Sep 25 15:23:02 2022
 | Host             : DESKTOP-AJV8A0J running 64-bit major release  (build 9200)
 | Command          : report_power -file Sensors_ML_wrapper_power_routed.rpt -pb Sensors_ML_wrapper_power_summary_routed.pb -rpx Sensors_ML_wrapper_power_routed.rpx
 | Design           : Sensors_ML_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.004 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     4155 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |     1489 |     53200 |            2.80 |
-|   Register              |    <0.001 |     1813 |    106400 |            1.70 |
+| Slice Logic             |    <0.001 |     4156 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     1493 |     53200 |            2.81 |
 |   CARRY4                |    <0.001 |       55 |     13300 |            0.41 |
+|   Register              |    <0.001 |     1813 |    106400 |            1.70 |
 |   LUT as Shift Register |    <0.001 |       82 |     17400 |            0.47 |
 |   F7/F8 Muxes           |    <0.001 |       28 |     53200 |            0.05 |
 |   Others                |     0.000 |      265 |       --- |             --- |
-| Signals                 |     0.001 |     2968 |       --- |             --- |
+| Signals                 |     0.001 |     2960 |       --- |             --- |
 | I/O                     |     0.000 |       16 |       125 |           12.80 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.137 |          |           |                 |
@@ -152,6 +152,10 @@ Table of Contents
 +--------------------------+-----------+
 | Sensors_ML_wrapper       |     1.405 |
 |   Sensors_ML_i           |     1.405 |
+|     PmodAD2_0            |     0.001 |
+|       inst               |     0.001 |
+|     PmodTMP3_0           |     0.001 |
+|       inst               |     0.001 |
 |     processing_system7_0 |     1.399 |
 |       inst               |     1.399 |
 |     ps7_0_axi_periph     |     0.002 |

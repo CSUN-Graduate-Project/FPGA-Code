@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Sensors_ML_auto_pc_0_synth_1" LaunchDir="C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/Sensors_ML_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sensors_ML_clk_wiz_0_2_synth_1" LaunchDir="C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/Sensors_ML_clk_wiz_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sensors_ML_system_ila_0_4_synth_1" LaunchDir="C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/Sensors_ML_system_ila_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="Sensors_ML_auto_pc_0_synth_1"/>
+		<Parent Id="Sensors_ML_clk_wiz_0_2_synth_1"/>
+		<Parent Id="Sensors_ML_system_ila_0_4_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

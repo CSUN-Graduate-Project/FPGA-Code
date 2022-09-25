@@ -15,7 +15,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/luisr/Desktop/vivado
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.cache/ip 
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.922 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1567.395 ; gain = 0.000
 Command: read_checkpoint -auto_incremental -incremental C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/utils_1/imports/synth_1/Sensors_ML_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/utils_1/imports/synth_1/Sensors_ML_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -28,43 +28,43 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3156
+INFO: [Synth 8-7075] Helper process launched with PID 10404
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.922 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1567.395 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_wrapper' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:56]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin10_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_wrapper' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:56]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin10_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:187]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin1_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:194]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin2_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:201]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin3_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:208]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin4_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:215]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin7_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:222]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin8_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:229]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin9_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:236]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin10_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:243]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin1_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:250]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin2_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:257]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin3_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:264]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin4_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:271]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin7_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:278]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin8_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:285]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin9_iobuf' of component 'IOBUF' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:292]
-INFO: [Synth 8-3491] module 'Sensors_ML' declared at 'c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:1535' bound to instance 'Sensors_ML_i' of component 'Sensors_ML' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:299]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin1_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:194]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin2_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:201]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin3_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:208]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin4_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:215]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin7_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:222]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin8_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:229]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_0_pin9_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:236]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin10_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:243]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin1_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:250]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin2_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:257]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin3_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:264]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin4_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:271]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin7_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:278]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin8_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:285]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:59735' bound to instance 'Pmod_out_1_pin9_iobuf' of component 'IOBUF' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:292]
+INFO: [Synth 8-3491] module 'Sensors_ML' declared at 'c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:1535' bound to instance 'Sensors_ML_i' of component 'Sensors_ML' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:299]
 INFO: [Synth 8-638] synthesizing module 'Sensors_ML' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:1613]
-INFO: [Synth 8-3491] module 'Sensors_ML_PmodAD2_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodAD2_0_0_stub.vhdl:5' bound to instance 'PmodAD2_0' of component 'Sensors_ML_PmodAD2_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2174]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_PmodAD2_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodAD2_0_0_stub.vhdl:55]
-INFO: [Synth 8-3491] module 'Sensors_ML_PmodTMP3_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodTMP3_0_0_stub.vhdl:5' bound to instance 'PmodTMP3_0' of component 'Sensors_ML_PmodTMP3_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2221]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_PmodTMP3_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodTMP3_0_0_stub.vhdl:55]
-INFO: [Synth 8-3491] module 'Sensors_ML_SCORE_CALC_TOP_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_SCORE_CALC_TOP_0_0_stub.vhdl:5' bound to instance 'SCORE_CALC_TOP_0' of component 'Sensors_ML_SCORE_CALC_TOP_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2268]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_SCORE_CALC_TOP_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_SCORE_CALC_TOP_0_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'Sensors_ML_axi_gpio_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Sensors_ML_axi_gpio_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2277]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_axi_gpio_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'Sensors_ML_axi_gpio_1_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'Sensors_ML_axi_gpio_1_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2301]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_axi_gpio_1_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'Sensors_ML_processing_system7_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Sensors_ML_processing_system7_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2325]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_processing_system7_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'Sensors_ML_PmodAD2_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodAD2_0_0_stub.vhdl:5' bound to instance 'PmodAD2_0' of component 'Sensors_ML_PmodAD2_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2174]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_PmodAD2_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodAD2_0_0_stub.vhdl:55]
+INFO: [Synth 8-3491] module 'Sensors_ML_PmodTMP3_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodTMP3_0_0_stub.vhdl:5' bound to instance 'PmodTMP3_0' of component 'Sensors_ML_PmodTMP3_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2221]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_PmodTMP3_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_PmodTMP3_0_0_stub.vhdl:55]
+INFO: [Synth 8-3491] module 'Sensors_ML_SCORE_CALC_TOP_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_SCORE_CALC_TOP_0_0_stub.vhdl:5' bound to instance 'SCORE_CALC_TOP_0' of component 'Sensors_ML_SCORE_CALC_TOP_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2268]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_SCORE_CALC_TOP_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_SCORE_CALC_TOP_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Sensors_ML_axi_gpio_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Sensors_ML_axi_gpio_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2277]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_axi_gpio_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'Sensors_ML_axi_gpio_1_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'Sensors_ML_axi_gpio_1_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2301]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_axi_gpio_1_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'Sensors_ML_processing_system7_0_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Sensors_ML_processing_system7_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2325]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_processing_system7_0_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_processing_system7_0_0_stub.vhdl:77]
 INFO: [Synth 8-638] synthesizing module 'Sensors_ML_ps7_0_axi_periph_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:857]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_CBJ5VJ' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_CBJ5VJ' (2#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:57]
@@ -75,21 +75,21 @@ INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1S00ELV' (4#1) [c
 INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_10KKSS5' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:360]
 INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_10KKSS5' (5#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:360]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_LOG532' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:484]
-INFO: [Synth 8-3491] module 'Sensors_ML_auto_pc_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Sensors_ML_auto_pc_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:667]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_auto_pc_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'Sensors_ML_auto_pc_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Sensors_ML_auto_pc_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:667]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_auto_pc_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_LOG532' (6#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:484]
-INFO: [Synth 8-3491] module 'Sensors_ML_xbar_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Sensors_ML_xbar_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:1436]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_xbar_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'Sensors_ML_xbar_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Sensors_ML_xbar_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:1436]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_xbar_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'Sensors_ML_ps7_0_axi_periph_0' (7#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:857]
-INFO: [Synth 8-3491] module 'Sensors_ML_rst_ps7_0_50M_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'Sensors_ML_rst_ps7_0_50M_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2515]
-INFO: [Synth 8-638] synthesizing module 'Sensors_ML_rst_ps7_0_50M_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-14144-DESKTOP-AJV8A0J/realtime/Sensors_ML_rst_ps7_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Sensors_ML_rst_ps7_0_50M_0' declared at 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'Sensors_ML_rst_ps7_0_50M_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2515]
+INFO: [Synth 8-638] synthesizing module 'Sensors_ML_rst_ps7_0_50M_0' [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/.Xil/Vivado-2772-DESKTOP-AJV8A0J/realtime/Sensors_ML_rst_ps7_0_50M_0_stub.vhdl:21]
 INFO: [Synth 8-3491] module 'Sensors_ML_xlconcat_0_0' declared at 'c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_xlconcat_0_0/synth/Sensors_ML_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'Sensors_ML_xlconcat_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:2528]
 INFO: [Synth 8-6157] synthesizing module 'Sensors_ML_xlconcat_0_0' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_xlconcat_0_0/synth/Sensors_ML_xlconcat_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (8#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'Sensors_ML_xlconcat_0_0' (9#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_xlconcat_0_0/synth/Sensors_ML_xlconcat_0_0.v:60]
 INFO: [Synth 8-256] done synthesizing module 'Sensors_ML' (10#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/synth/Sensors_ML.vhd:1613]
-INFO: [Synth 8-256] done synthesizing module 'Sensors_ML_wrapper' (11#1) [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Sensors_ML_wrapper' (11#1) [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/hdl/Sensors_ML_wrapper.vhd:56]
 WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -192,18 +192,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1566.922 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1567.395 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1566.922 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1567.395 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1566.922 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1567.395 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1575.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1575.598 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -222,12 +222,12 @@ Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sen
 Finished Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_auto_pc_0/Sensors_ML_auto_pc_0/Sensors_ML_auto_pc_0_in_context.xdc] for cell 'Sensors_ML_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0_in_context.xdc] for cell 'Sensors_ML_i/rst_ps7_0_50M'
 Finished Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0/Sensors_ML_rst_ps7_0_50M_0_in_context.xdc] for cell 'Sensors_ML_i/rst_ps7_0_50M'
-Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_in_context.xdc] for cell 'Sensors_ML_i/SCORE_CALC_TOP_0'
-Finished Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_in_context.xdc] for cell 'Sensors_ML_i/SCORE_CALC_TOP_0'
 Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_0_0/Sensors_ML_axi_gpio_0_0/Sensors_ML_axi_gpio_0_0_in_context.xdc] for cell 'Sensors_ML_i/axi_gpio_0'
 Finished Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_0_0/Sensors_ML_axi_gpio_0_0/Sensors_ML_axi_gpio_0_0_in_context.xdc] for cell 'Sensors_ML_i/axi_gpio_0'
 Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0_in_context.xdc] for cell 'Sensors_ML_i/axi_gpio_1'
 Finished Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0/Sensors_ML_axi_gpio_1_0_in_context.xdc] for cell 'Sensors_ML_i/axi_gpio_1'
+Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_in_context.xdc] for cell 'Sensors_ML_i/SCORE_CALC_TOP_0'
+Finished Parsing XDC File [c:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.gen/sources_1/bd/Sensors_ML/ip/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0/Sensors_ML_SCORE_CALC_TOP_0_0_in_context.xdc] for cell 'Sensors_ML_i/SCORE_CALC_TOP_0'
 Parsing XDC File [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/constrs_1/imports/new/Sensors_Const.xdc]
 Finished Parsing XDC File [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/constrs_1/imports/new/Sensors_Const.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.srcs/constrs_1/imports/new/Sensors_Const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Sensors_ML_wrapper_propImpl.xdc].
@@ -236,23 +236,23 @@ Parsing XDC File [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sen
 Finished Parsing XDC File [C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1646.984 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 16 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1654.996 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1646.984 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -526,14 +526,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/ps7_0_axi_periph/s00
 Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/xlconcat_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/SCORE_CALC_TOP_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Sensors_ML_i/SCORE_CALC_TOP_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -556,25 +556,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -592,37 +592,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -659,18 +659,18 @@ Report Cell Usage:
 |10    |IOBUF                                  |    16|
 +------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1654.996 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1654.996 ; gain = 88.074
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1646.984 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.984 ; gain = 79.590
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1654.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1646.984 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1646.984 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 16 instances
@@ -679,7 +679,7 @@ Synth Design complete, checksum: 3117088
 INFO: [Common 17-83] Releasing license: Synthesis
 83 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1654.996 ; gain = 88.074
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1646.984 ; gain = 79.590
 INFO: [Common 17-1381] The checkpoint 'C:/Users/luisr/.Xilinx/VHDL_Projects/Graduate_Project/FPGA/Sensors_ML/Sensors_ML.runs/synth_1/Sensors_ML_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Sensors_ML_wrapper_utilization_synth.rpt -pb Sensors_ML_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Sep 17 14:14:42 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 25 15:19:17 2022...
