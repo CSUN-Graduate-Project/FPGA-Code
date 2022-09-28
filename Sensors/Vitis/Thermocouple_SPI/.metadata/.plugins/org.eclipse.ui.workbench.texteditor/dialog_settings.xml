@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Xil_Out32"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="mio"/>
+			<item value="emio"/>
+			<item value="emi"/>
 			<item value="Xil_Out32"/>
 			<item value="SPI_0"/>
 			<item value="spi_o"/>

@@ -25,5 +25,4 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Thermocouple_SPI/application_project_thermocouple_spi/Debug/application_project_thermocouple_spi.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "*A9*#0"}
-con
+bpadd -addr &main

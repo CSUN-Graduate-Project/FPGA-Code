@@ -22,3 +22,4 @@ platform generate -quick
 platform generate
 bsp reload
 platform generate -domains 
+platform generate

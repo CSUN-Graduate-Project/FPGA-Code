@@ -6,8 +6,11 @@
 
 XSpiPs spi_0;
 
-#define spi_config_reg_offset XSPIPS_CR_OFFSET //configure register
 #define spi_base_addr XPAR_PS7_SPI_0_BASEADDR //spi base address 0xE0006000
+#define spi_config_reg_offset XSPIPS_CR_OFFSET //configure register
+#define spi_ena_reg_offset XSPIPS_ER_OFFSET //spi enable register
+#define spi_int_ena_reg_offset XSPIPS_IER_OFFSET //spi interrupt enable register
+#define spi_int_dis_reg_offset XSPIPS_IDR_OFFSET// spi inrerrupt disable register
 #define tx_fifo_offset XSPIPS_TXD_OFFSET //Data Transmit Register
 #define rx_fifo_offset XSPIPS_RXD_OFFSET //Data Receive Register
 
@@ -18,27 +21,51 @@ int main()
     print("Hello World\n\r");
     print("Successfully ran Hello World application\n");
 
-    //SPI controller base address 0xE0006000 spi0
-    //XSPIPS_CR_OFFSET is the configuration register with 0x0 offset from spi0 base address
+    //PMod connector-only Test without SPI Hardware (Max6675)
+    u8 sendBuf[2] = {0xAA, 0xAA};
+    u8 recvBuf[2];
 
-    //Configure SPI controller : Write 0x0002_FC0F to the spi.Config_reg register
-    Xil_Out32(spi_base_addr + spi_config_reg_offset, 0x0002FC0F);
+    //SPI controller base address 0xE0006000 spi0
+
+    while(1) {
+    //Configure SPI controller : Write 0x0002_FC0F to spi config register
+    Xil_Out32(spi_base_addr + spi_config_reg_offset, 0x2FC0F);
 	//Xil_In32(spi_base_addr + spi_config_reg_offset); //read configure register
 
-    //XSpiPs_SendByte(spi_base_addr + spi_config_reg_offset, 0xAA) //can only send 8-bit data
+    //Assert slave select, CS (bits 13:10) = 1101
+    Xil_Out32(spi_base_addr + spi_config_reg_offset, 0x2F40F);
 
-    //1.Deassert all chip selects, CS = 1111
+    //Enable SPI controller
+    XSpiPs_Out32(spi_base_addr + spi_ena_reg_offset, 1);
 
-    //2.No external 3-to-8 decoder, PERI_SEL = 0
+    //Write bytes to Tx FIFO
+    XSpiPs_Out32(spi_base_addr + tx_fifo_offset, sendBuf[0]); //send data to TX FIFO
 
-    //3.set baud rate divisor to 256, BAUD_RATE_DIV = 111 ---> 50MHz/256 = 195.312kHz
+    //Enable interrupts
+    Xil_Out32(spi_base_addr + spi_int_ena_reg_offset, 0x27);
 
-    //4.Set clock phase and polarity to 1, CLK_PH = 1 & CLK_POL = 1 or XSPIPS_CR_CPHA_MASK & XSPIPS_CR_CPOL_MASK
+    //Start data transfer from Tx FIFO to Rx FIFO, man_start_com = 1
+    Xil_Out32(spi_base_addr + spi_config_reg_offset, 0x3F40F);
 
-    //5.Enable master mode, MODE_SEL = 1 or XSPIPS_CR_MSTREN_MASK = 1
+    //Read data from Rx FIFO
+    recvBuf[0] = Xil_In32(spi_base_addr + rx_fifo_offset);
+	printf("Sending %d \n", sendBuf);
+	printf("Received  %d \n", recvBuf);
+
+    //Wait for interrupts and interrupt handler
+
+    //Disable interrupts
+    Xil_Out32(spi_base_addr + spi_int_dis_reg_offset, 0x27);
+
+    //Disable SPI controller
+    Xil_Out32(spi_base_addr + spi_ena_reg_offset, 0);
+
+    //Deassert slave select
+    Xil_Out32(spi_base_addr + spi_config_reg_offset, 0x3FC0F);
+    }
 
     //PMod connector-only Test without SPI Hardware (Max6675)
-        u8 sendBuf[2] = {0xAA, 0xAA};
+        /*u8 sendBuf[2] = {0xAA, 0xAA};
         u8 recvBuf[2];
         while(1) {
         XSpiPs_Out32(0xE0006014, 1); //enable SPI
@@ -50,7 +77,7 @@ int main()
         //printf("status = %d", status);
         printf("Sending %d \n", sendBuf);
         printf("Received  %d \n", recvBuf);
-        }
+        }*/
 
 
     //Send data to TX FIFO
